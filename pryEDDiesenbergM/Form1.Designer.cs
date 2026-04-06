@@ -156,6 +156,7 @@
             this.díasToolStripMenuItem.Name = "díasToolStripMenuItem";
             this.díasToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
             this.díasToolStripMenuItem.Text = "Días...";
+            this.díasToolStripMenuItem.Click += new System.EventHandler(this.díasToolStripMenuItem_Click);
             // 
             // toolStripMenuItem3
             // 
@@ -167,6 +168,7 @@
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
             this.clientesToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
             this.clientesToolStripMenuItem.Text = "Clientes...";
+            this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
             // toolStripMenuItem7
             // 
@@ -195,14 +197,16 @@
             // colaToolStripMenuItem
             // 
             this.colaToolStripMenuItem.Name = "colaToolStripMenuItem";
-            this.colaToolStripMenuItem.Size = new System.Drawing.Size(289, 44);
+            this.colaToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
             this.colaToolStripMenuItem.Text = "Cola...";
+            this.colaToolStripMenuItem.Click += new System.EventHandler(this.colaToolStripMenuItem_Click);
             // 
             // pilaToolStripMenuItem
             // 
             this.pilaToolStripMenuItem.Name = "pilaToolStripMenuItem";
-            this.pilaToolStripMenuItem.Size = new System.Drawing.Size(289, 44);
+            this.pilaToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
             this.pilaToolStripMenuItem.Text = "Pila...";
+            this.pilaToolStripMenuItem.Click += new System.EventHandler(this.pilaToolStripMenuItem_Click);
             // 
             // toolStripMenuItem4
             // 
@@ -212,14 +216,16 @@
             // listaSimpleToolStripMenuItem
             // 
             this.listaSimpleToolStripMenuItem.Name = "listaSimpleToolStripMenuItem";
-            this.listaSimpleToolStripMenuItem.Size = new System.Drawing.Size(289, 44);
+            this.listaSimpleToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
             this.listaSimpleToolStripMenuItem.Text = "Lista Simple...";
+            this.listaSimpleToolStripMenuItem.Click += new System.EventHandler(this.listaSimpleToolStripMenuItem_Click);
             // 
             // listaDobleToolStripMenuItem
             // 
             this.listaDobleToolStripMenuItem.Name = "listaDobleToolStripMenuItem";
-            this.listaDobleToolStripMenuItem.Size = new System.Drawing.Size(289, 44);
+            this.listaDobleToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
             this.listaDobleToolStripMenuItem.Text = "Lista Doble";
+            this.listaDobleToolStripMenuItem.Click += new System.EventHandler(this.listaDobleToolStripMenuItem_Click);
             // 
             // estructurasNoLinealesToolStripMenuItem
             // 
@@ -233,14 +239,16 @@
             // arbolToolStripMenuItem
             // 
             this.arbolToolStripMenuItem.Name = "arbolToolStripMenuItem";
-            this.arbolToolStripMenuItem.Size = new System.Drawing.Size(220, 44);
+            this.arbolToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
             this.arbolToolStripMenuItem.Text = "Arbol...";
+            this.arbolToolStripMenuItem.Click += new System.EventHandler(this.arbolToolStripMenuItem_Click);
             // 
             // grafoToolStripMenuItem
             // 
             this.grafoToolStripMenuItem.Name = "grafoToolStripMenuItem";
-            this.grafoToolStripMenuItem.Size = new System.Drawing.Size(220, 44);
+            this.grafoToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
             this.grafoToolStripMenuItem.Text = "Grafo...";
+            this.grafoToolStripMenuItem.Click += new System.EventHandler(this.grafoToolStripMenuItem_Click);
             // 
             // baseDeDatosToolStripMenuItem
             // 
@@ -260,6 +268,7 @@
             this.consultaDeUnaTablaToolStripMenuItem.Name = "consultaDeUnaTablaToolStripMenuItem";
             this.consultaDeUnaTablaToolStripMenuItem.Size = new System.Drawing.Size(514, 44);
             this.consultaDeUnaTablaToolStripMenuItem.Text = "Consulta de una tabla...";
+            this.consultaDeUnaTablaToolStripMenuItem.Click += new System.EventHandler(this.consultaDeUnaTablaToolStripMenuItem_Click);
             // 
             // toolStripMenuItem5
             // 
@@ -271,12 +280,14 @@
             this.consultaDeBaseDeDatosToolStripMenuItem.Name = "consultaDeBaseDeDatosToolStripMenuItem";
             this.consultaDeBaseDeDatosToolStripMenuItem.Size = new System.Drawing.Size(514, 44);
             this.consultaDeBaseDeDatosToolStripMenuItem.Text = "Consulta de base de datos...";
+            this.consultaDeBaseDeDatosToolStripMenuItem.Click += new System.EventHandler(this.consultaDeBaseDeDatosToolStripMenuItem_Click);
             // 
             // operacionesEnBaseDeDatosToolStripMenuItem
             // 
             this.operacionesEnBaseDeDatosToolStripMenuItem.Name = "operacionesEnBaseDeDatosToolStripMenuItem";
             this.operacionesEnBaseDeDatosToolStripMenuItem.Size = new System.Drawing.Size(514, 44);
             this.operacionesEnBaseDeDatosToolStripMenuItem.Text = "Operaciones en base de datos...";
+            this.operacionesEnBaseDeDatosToolStripMenuItem.Click += new System.EventHandler(this.operacionesEnBaseDeDatosToolStripMenuItem_Click);
             // 
             // toolStripMenuItem6
             // 
@@ -288,6 +299,7 @@
             this.consultasVariasToolStripMenuItem.Name = "consultasVariasToolStripMenuItem";
             this.consultasVariasToolStripMenuItem.Size = new System.Drawing.Size(514, 44);
             this.consultasVariasToolStripMenuItem.Text = "Consultas varias con operaciones...";
+            this.consultasVariasToolStripMenuItem.Click += new System.EventHandler(this.consultasVariasToolStripMenuItem_Click);
             // 
             // contextMenuStrip1
             // 

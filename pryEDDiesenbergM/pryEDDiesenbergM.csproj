@@ -52,11 +52,29 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmArbol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArbol.Designer.cs">
+      <DependentUpon>frmArbol.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCiudades.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmCiudades.Designer.cs">
       <DependentUpon>frmCiudades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientes.Designer.cs">
+      <DependentUpon>frmClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCola.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCola.Designer.cs">
+      <DependentUpon>frmCola.cs</DependentUpon>
     </Compile>
     <Compile Include="frmColores.cs">
       <SubType>Form</SubType>
@@ -64,17 +82,71 @@
     <Compile Include="frmColores.Designer.cs">
       <DependentUpon>frmColores.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmConsultaBD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaBD.Designer.cs">
+      <DependentUpon>frmConsultaBD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultasVarias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultasVarias.Designer.cs">
+      <DependentUpon>frmConsultasVarias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaTabla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaTabla.Designer.cs">
+      <DependentUpon>frmConsultaTabla.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDatosDesarrollador.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmDatosDesarrollador.Designer.cs">
       <DependentUpon>frmDatosDesarrollador.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDias.Designer.cs">
+      <DependentUpon>frmDias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGrafo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGrafo.Designer.cs">
+      <DependentUpon>frmGrafo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListaDoble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaDoble.Designer.cs">
+      <DependentUpon>frmListaDoble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListaSimple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaSimple.Designer.cs">
+      <DependentUpon>frmListaSimple.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMeses.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMeses.Designer.cs">
       <DependentUpon>frmMeses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOperacionesBD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOperacionesBD.Designer.cs">
+      <DependentUpon>frmOperacionesBD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPila.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPila.Designer.cs">
+      <DependentUpon>frmPila.cs</DependentUpon>
     </Compile>
     <Compile Include="frmProvincias.cs">
       <SubType>Form</SubType>
