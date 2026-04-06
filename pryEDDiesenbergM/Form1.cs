@@ -133,5 +133,11 @@ namespace pryEDDiesenbergM
             frmConsultasVarias x = new frmConsultasVarias();
             x.ShowDialog();
         }
+
+        private void alumnosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAlumnos x = new frmAlumnos();
+            x.ShowDialog();
+        }
     }
 }
