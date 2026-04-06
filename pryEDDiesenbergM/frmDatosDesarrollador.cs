@@ -16,5 +16,10 @@ namespace pryEDDiesenbergM
         {
             InitializeComponent();
         }
+
+        private void lblRol_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
