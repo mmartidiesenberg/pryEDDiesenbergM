@@ -35,36 +35,39 @@
             this.lblDeuda = new System.Windows.Forms.Label();
             this.btnGrabar = new System.Windows.Forms.Button();
             this.dgvClientes = new System.Windows.Forms.DataGridView();
-            this.txtDeuda = new System.Windows.Forms.TextBox();
             this.colCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colDeuda = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtDeuda = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.SuspendLayout();
             // 
             // txtCodigo
             // 
             this.txtCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodigo.Location = new System.Drawing.Point(525, 12);
+            this.txtCodigo.Location = new System.Drawing.Point(262, 6);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(297, 38);
+            this.txtCodigo.Size = new System.Drawing.Size(150, 23);
             this.txtCodigo.TabIndex = 0;
             // 
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(177, 81);
+            this.txtNombre.Location = new System.Drawing.Point(88, 42);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(645, 38);
+            this.txtNombre.Size = new System.Drawing.Size(324, 23);
             this.txtNombre.TabIndex = 1;
             // 
             // lblCodigo
             // 
             this.lblCodigo.AutoSize = true;
             this.lblCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigo.Location = new System.Drawing.Point(24, 19);
+            this.lblCodigo.Location = new System.Drawing.Point(12, 10);
+            this.lblCodigo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(100, 31);
+            this.lblCodigo.Size = new System.Drawing.Size(52, 17);
             this.lblCodigo.TabIndex = 3;
             this.lblCodigo.Text = "Código";
             // 
@@ -72,9 +75,10 @@
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(24, 88);
+            this.lblNombre.Location = new System.Drawing.Point(12, 46);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(110, 31);
+            this.lblNombre.Size = new System.Drawing.Size(58, 17);
             this.lblNombre.TabIndex = 4;
             this.lblNombre.Text = "Nombre";
             // 
@@ -82,18 +86,20 @@
             // 
             this.lblDeuda.AutoSize = true;
             this.lblDeuda.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDeuda.Location = new System.Drawing.Point(24, 151);
+            this.lblDeuda.Location = new System.Drawing.Point(12, 79);
+            this.lblDeuda.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDeuda.Name = "lblDeuda";
-            this.lblDeuda.Size = new System.Drawing.Size(94, 31);
+            this.lblDeuda.Size = new System.Drawing.Size(50, 17);
             this.lblDeuda.TabIndex = 5;
             this.lblDeuda.Text = "Deuda";
             // 
             // btnGrabar
             // 
             this.btnGrabar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGrabar.Location = new System.Drawing.Point(643, 236);
+            this.btnGrabar.Location = new System.Drawing.Point(322, 123);
+            this.btnGrabar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnGrabar.Name = "btnGrabar";
-            this.btnGrabar.Size = new System.Drawing.Size(179, 43);
+            this.btnGrabar.Size = new System.Drawing.Size(90, 22);
             this.btnGrabar.TabIndex = 6;
             this.btnGrabar.Text = "Grabar";
             this.btnGrabar.UseVisualStyleBackColor = true;
@@ -105,21 +111,13 @@
             this.colCodigo,
             this.colNombre,
             this.colDeuda});
-            this.dgvClientes.Location = new System.Drawing.Point(29, 323);
+            this.dgvClientes.Location = new System.Drawing.Point(14, 168);
+            this.dgvClientes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvClientes.Name = "dgvClientes";
             this.dgvClientes.RowHeadersWidth = 82;
             this.dgvClientes.RowTemplate.Height = 33;
-            this.dgvClientes.Size = new System.Drawing.Size(814, 346);
+            this.dgvClientes.Size = new System.Drawing.Size(407, 180);
             this.dgvClientes.TabIndex = 7;
-            // 
-            // txtDeuda
-            // 
-            this.txtDeuda.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDeuda.Location = new System.Drawing.Point(525, 144);
-            this.txtDeuda.Margin = new System.Windows.Forms.Padding(6);
-            this.txtDeuda.Name = "txtDeuda";
-            this.txtDeuda.Size = new System.Drawing.Size(297, 38);
-            this.txtDeuda.TabIndex = 8;
             // 
             // colCodigo
             // 
@@ -142,11 +140,19 @@
             this.colDeuda.Name = "colDeuda";
             this.colDeuda.Width = 200;
             // 
+            // txtDeuda
+            // 
+            this.txtDeuda.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDeuda.Location = new System.Drawing.Point(262, 75);
+            this.txtDeuda.Name = "txtDeuda";
+            this.txtDeuda.Size = new System.Drawing.Size(150, 23);
+            this.txtDeuda.TabIndex = 8;
+            // 
             // frmClientes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(868, 709);
+            this.ClientSize = new System.Drawing.Size(434, 369);
             this.Controls.Add(this.txtDeuda);
             this.Controls.Add(this.dgvClientes);
             this.Controls.Add(this.btnGrabar);
@@ -155,9 +161,10 @@
             this.Controls.Add(this.lblCodigo);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtCodigo);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmClientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmClientes";
+            this.Text = "Clientes";
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

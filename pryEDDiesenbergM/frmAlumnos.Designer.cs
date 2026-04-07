@@ -46,9 +46,10 @@
             // 
             this.lblCodigo.AutoSize = true;
             this.lblCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigo.Location = new System.Drawing.Point(12, 75);
+            this.lblCodigo.Location = new System.Drawing.Point(6, 39);
+            this.lblCodigo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(108, 31);
+            this.lblCodigo.Size = new System.Drawing.Size(56, 17);
             this.lblCodigo.TabIndex = 0;
             this.lblCodigo.Text = "Código:";
             // 
@@ -56,9 +57,10 @@
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(12, 155);
+            this.lblNombre.Location = new System.Drawing.Point(6, 81);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(118, 31);
+            this.lblNombre.Size = new System.Drawing.Size(62, 17);
             this.lblNombre.TabIndex = 1;
             this.lblNombre.Text = "Nombre:";
             // 
@@ -66,43 +68,48 @@
             // 
             this.lblCarrera.AutoSize = true;
             this.lblCarrera.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCarrera.Location = new System.Drawing.Point(12, 233);
+            this.lblCarrera.Location = new System.Drawing.Point(6, 121);
+            this.lblCarrera.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCarrera.Name = "lblCarrera";
-            this.lblCarrera.Size = new System.Drawing.Size(114, 31);
+            this.lblCarrera.Size = new System.Drawing.Size(60, 17);
             this.lblCarrera.TabIndex = 2;
             this.lblCarrera.Text = "Carrera:";
             // 
             // txtCodigo
             // 
             this.txtCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodigo.Location = new System.Drawing.Point(633, 68);
+            this.txtCodigo.Location = new System.Drawing.Point(316, 35);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(219, 38);
+            this.txtCodigo.Size = new System.Drawing.Size(112, 23);
             this.txtCodigo.TabIndex = 3;
             // 
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(202, 142);
+            this.txtNombre.Location = new System.Drawing.Point(101, 74);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(650, 38);
+            this.txtNombre.Size = new System.Drawing.Size(327, 23);
             this.txtNombre.TabIndex = 4;
             // 
             // cmbCarrera
             // 
             this.cmbCarrera.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCarrera.FormattingEnabled = true;
-            this.cmbCarrera.Location = new System.Drawing.Point(202, 219);
+            this.cmbCarrera.Location = new System.Drawing.Point(101, 114);
+            this.cmbCarrera.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbCarrera.Name = "cmbCarrera";
-            this.cmbCarrera.Size = new System.Drawing.Size(650, 39);
+            this.cmbCarrera.Size = new System.Drawing.Size(327, 24);
             this.cmbCarrera.TabIndex = 5;
             // 
             // btnGrabar
             // 
             this.btnGrabar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGrabar.Location = new System.Drawing.Point(633, 285);
+            this.btnGrabar.Location = new System.Drawing.Point(316, 148);
+            this.btnGrabar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnGrabar.Name = "btnGrabar";
-            this.btnGrabar.Size = new System.Drawing.Size(219, 38);
+            this.btnGrabar.Size = new System.Drawing.Size(110, 20);
             this.btnGrabar.TabIndex = 6;
             this.btnGrabar.Text = "Grabar";
             this.btnGrabar.UseVisualStyleBackColor = true;
@@ -114,11 +121,12 @@
             this.colCodigo,
             this.colNombre,
             this.colCarrera});
-            this.dgvClientes.Location = new System.Drawing.Point(38, 356);
+            this.dgvClientes.Location = new System.Drawing.Point(19, 185);
+            this.dgvClientes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvClientes.Name = "dgvClientes";
             this.dgvClientes.RowHeadersWidth = 82;
             this.dgvClientes.RowTemplate.Height = 33;
-            this.dgvClientes.Size = new System.Drawing.Size(814, 346);
+            this.dgvClientes.Size = new System.Drawing.Size(407, 180);
             this.dgvClientes.TabIndex = 8;
             // 
             // colCodigo
@@ -144,9 +152,9 @@
             // 
             // frmAlumnos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(938, 731);
+            this.ClientSize = new System.Drawing.Size(469, 380);
             this.Controls.Add(this.dgvClientes);
             this.Controls.Add(this.btnGrabar);
             this.Controls.Add(this.cmbCarrera);
@@ -155,9 +163,10 @@
             this.Controls.Add(this.lblCarrera);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblCodigo);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmAlumnos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmAlumnos";
+            this.Text = "Alumnos";
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

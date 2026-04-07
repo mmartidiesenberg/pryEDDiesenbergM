@@ -168,17 +168,56 @@
     <EmbeddedResource Include="frmAlumnos.resx">
       <DependentUpon>frmAlumnos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmArbol.resx">
+      <DependentUpon>frmArbol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCiudades.resx">
+      <DependentUpon>frmCiudades.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmClientes.resx">
       <DependentUpon>frmClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCola.resx">
+      <DependentUpon>frmCola.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmColores.resx">
       <DependentUpon>frmColores.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaBD.resx">
+      <DependentUpon>frmConsultaBD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultasVarias.resx">
+      <DependentUpon>frmConsultasVarias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaTabla.resx">
+      <DependentUpon>frmConsultaTabla.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDatosDesarrollador.resx">
       <DependentUpon>frmDatosDesarrollador.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDias.resx">
+      <DependentUpon>frmDias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGrafo.resx">
+      <DependentUpon>frmGrafo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaDoble.resx">
+      <DependentUpon>frmListaDoble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaSimple.resx">
+      <DependentUpon>frmListaSimple.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMeses.resx">
       <DependentUpon>frmMeses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOperacionesBD.resx">
+      <DependentUpon>frmOperacionesBD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPila.resx">
+      <DependentUpon>frmPila.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProvincias.resx">
+      <DependentUpon>frmProvincias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
