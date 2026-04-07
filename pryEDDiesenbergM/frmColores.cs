@@ -16,5 +16,13 @@ namespace pryEDDiesenbergM
         {
             InitializeComponent();
         }
+
+        private void btnGrabar_Click(object sender, EventArgs e)
+        {
+            clsArchivoTexto x = new clsArchivoTexto();
+            x.NomArchi = "Colores.txt";
+            x.Grabar(txtColor.Text);
+            MessageBox.Show("Dato grabado");
+        }
     }
 }
