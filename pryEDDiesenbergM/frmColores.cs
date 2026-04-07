@@ -22,6 +22,7 @@ namespace pryEDDiesenbergM
             clsArchivoTexto x = new clsArchivoTexto();
             x.NomArchi = "Colores.txt";
             x.Grabar(txtColor.Text);
+            x.Recorrer(lstColores);
             MessageBox.Show("Dato grabado");
         }
     }
