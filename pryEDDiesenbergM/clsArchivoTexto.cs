@@ -53,10 +53,39 @@ namespace pryEDDiesenbergM
             String DatoLeido;
             lst.Items.Clear(); //Limpia el ListBox
             StreamReader AD = new StreamReader(NomArchi); //Abrir AD para lectura
-            DatoLeido= AD.ReadLine(); //Lee la primera linea del archivo
+            DatoLeido = AD.ReadLine(); //Lee la primera linea del archivo
             while (DatoLeido != null) //Mientras no se llegue al final del archivo
             {
                 lst.Items.Add(DatoLeido); //Agrega el dato leido al ListBox
+                DatoLeido = AD.ReadLine(); //Lee la siguiente linea del archivo
+            }
+            AD.Close(); //Cierra el archivo AD
+        }
+
+        public void Recorrer(ComboBox lst)
+        {
+            String DatoLeido;
+            lst.Items.Clear(); //Limpia el ListBox
+            StreamReader AD = new StreamReader(NomArchi); //Abrir AD para lectura
+            DatoLeido = AD.ReadLine(); //Lee la primera linea del archivo
+            while (DatoLeido != null) //Mientras no se llegue al final del archivo
+            {
+                lst.Items.Add(DatoLeido); //Agrega el dato leido al ListBox
+                DatoLeido = AD.ReadLine(); //Lee la siguiente linea del archivo
+            }
+            AD.Close(); //Cierra el archivo AD
+            lst.SelectedIndex = 0; //Selecciona el primer elemento del ComboBox
+        }
+
+        public void Recorrer(DataGridView Grilla)
+        {
+            String DatoLeido;
+            Grilla.Rows.Clear(); //Limpia el ListBox
+            StreamReader AD = new StreamReader(NomArchi); //Abrir AD para lectura
+            DatoLeido = AD.ReadLine(); //Lee la primera linea del archivo
+            while (DatoLeido != null) //Mientras no se llegue al final del archivo
+            {
+                Grilla.Rows.Add(DatoLeido.Split(';')); //Agrega el dato leido al ListBox
                 DatoLeido = AD.ReadLine(); //Lee la siguiente linea del archivo
             }
             AD.Close(); //Cierra el archivo AD
