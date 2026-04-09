@@ -49,20 +49,5 @@ namespace pryEDDiesenbergM
             }
             AD.Close(); //Cierra el archivo AD
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }

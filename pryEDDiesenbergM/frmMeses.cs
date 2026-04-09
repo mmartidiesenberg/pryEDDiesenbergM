@@ -16,5 +16,14 @@ namespace pryEDDiesenbergM
         {
             InitializeComponent();
         }
+
+        private void btnGrabar_Click(object sender, EventArgs e)
+        {
+            clsArchivoTexto x = new clsArchivoTexto();
+            x.NomArchi = "Meses.txt";
+            x.Grabar(txtMeses.Text);
+            x.Recorrer(lstMeses);
+            MessageBox.Show("Dato grabado");
+        }
     }
 }

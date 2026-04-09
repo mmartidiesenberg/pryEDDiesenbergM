@@ -25,5 +25,10 @@ namespace pryEDDiesenbergM
             x.Recorrer(lstColores);
             MessageBox.Show("Dato grabado");
         }
+
+        private void frmColores_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
