@@ -16,5 +16,19 @@ namespace pryEDDiesenbergM
         {
             InitializeComponent();
         }
+
+        private void btnGrabar_Click(object sender, EventArgs e)
+        {
+            clsArchivoTexto objCliente = new clsArchivoTexto();
+            objCliente.NomArchi = "Clientes.csv";
+            objCliente.Grabar(txtCodigo.Text, txtNombre.Text, txtDeuda.Text);
+
+            MessageBox.Show("Grabado!");
+        }
+
+        private void frmClientes_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

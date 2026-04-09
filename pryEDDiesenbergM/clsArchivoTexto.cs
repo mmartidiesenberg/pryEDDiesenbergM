@@ -36,6 +36,18 @@ namespace pryEDDiesenbergM
             AD.WriteLine(Nombre); //Escribe el contenido de la variable + <ENTER>
             AD.Close(); //Cierra el archivo AD
         }
+
+        public void Grabar(String Dato1, String Dato2, String Dato3)
+        {
+            StreamWriter AD = new StreamWriter(NomArchi, true); //Abrir AD para escritura
+            AD.Write(Dato1); //Escribe el contenido de la variable SIN enter
+            AD.Write(";"); //Escribe punto y coma sin enter
+            AD.Write(Dato2); //Escribe el contenido de la variable + <ENTER>
+            AD.Write(";"); //Escribe punto y coma sin enter
+            AD.WriteLine(Dato3); //Escribe el contenido de la variable SIN enter
+            AD.Close(); //Cierra el archivo AD
+        }
+
         public void Recorrer(ListBox lst)
         {
             String DatoLeido;

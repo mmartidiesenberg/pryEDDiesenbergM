@@ -23,7 +23,6 @@ namespace pryEDDiesenbergM
             x.NomArchi = "Carreras.txt";
             x.Grabar(txtCarreras.Text);
             x.Recorrer(lstCarreras);
-            MessageBox.Show("Dato grabado");
         }
     }
 }
