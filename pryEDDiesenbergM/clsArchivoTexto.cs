@@ -90,5 +90,9 @@ namespace pryEDDiesenbergM
             }
             AD.Close(); //Cierra el archivo AD
         }
+
+        public string NomArchivo = "Alumnos.txt";
+
+
     }
 }
