@@ -23,6 +23,8 @@ namespace pryEDDiesenbergM
             clsArchivoTexto objAlumnos = new clsArchivoTexto();
             objAlumnos.NomArchi = "Alumnos.csv";
             objAlumnos.Grabar(txtCodigo.Text, txtNombre.Text, cmbCarrera.Text);
+
+            MessageBox.Show("Grabado!");
         }
 
         private void frmAlumnos_Load(object sender, EventArgs e)

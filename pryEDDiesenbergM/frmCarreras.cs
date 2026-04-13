@@ -24,5 +24,10 @@ namespace pryEDDiesenbergM
             x.Grabar(txtCarreras.Text);
             x.Recorrer(lstCarreras);
         }
+
+        private void frmCarreras_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

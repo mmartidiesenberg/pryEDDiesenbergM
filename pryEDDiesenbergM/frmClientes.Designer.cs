@@ -45,62 +45,62 @@
             // txtCodigo
             // 
             this.txtCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodigo.Location = new System.Drawing.Point(461, 11);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCodigo.Location = new System.Drawing.Point(771, 26);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(150, 23);
+            this.txtCodigo.Size = new System.Drawing.Size(296, 38);
             this.txtCodigo.TabIndex = 0;
             // 
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(287, 46);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNombre.Location = new System.Drawing.Point(423, 93);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(324, 23);
+            this.txtNombre.Size = new System.Drawing.Size(644, 38);
             this.txtNombre.TabIndex = 1;
             // 
             // lblCodigo
             // 
             this.lblCodigo.AutoSize = true;
             this.lblCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigo.Location = new System.Drawing.Point(12, 17);
-            this.lblCodigo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCodigo.Location = new System.Drawing.Point(24, 33);
+            this.lblCodigo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(52, 17);
-            this.lblCodigo.TabIndex = 3;
+            this.lblCodigo.Size = new System.Drawing.Size(100, 31);
+            this.lblCodigo.TabIndex = 4;
             this.lblCodigo.Text = "Código";
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(11, 52);
-            this.lblNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNombre.Location = new System.Drawing.Point(22, 100);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(58, 17);
-            this.lblNombre.TabIndex = 4;
+            this.lblNombre.Size = new System.Drawing.Size(110, 31);
+            this.lblNombre.TabIndex = 5;
             this.lblNombre.Text = "Nombre";
             // 
             // lblDeuda
             // 
             this.lblDeuda.AutoSize = true;
             this.lblDeuda.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDeuda.Location = new System.Drawing.Point(12, 85);
-            this.lblDeuda.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDeuda.Location = new System.Drawing.Point(24, 163);
+            this.lblDeuda.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDeuda.Name = "lblDeuda";
-            this.lblDeuda.Size = new System.Drawing.Size(50, 17);
-            this.lblDeuda.TabIndex = 5;
+            this.lblDeuda.Size = new System.Drawing.Size(94, 31);
+            this.lblDeuda.TabIndex = 6;
             this.lblDeuda.Text = "Deuda";
             // 
             // btnGrabar
             // 
             this.btnGrabar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGrabar.Location = new System.Drawing.Point(521, 126);
-            this.btnGrabar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnGrabar.Location = new System.Drawing.Point(887, 243);
+            this.btnGrabar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGrabar.Name = "btnGrabar";
-            this.btnGrabar.Size = new System.Drawing.Size(90, 22);
-            this.btnGrabar.TabIndex = 6;
+            this.btnGrabar.Size = new System.Drawing.Size(180, 42);
+            this.btnGrabar.TabIndex = 3;
             this.btnGrabar.Text = "Grabar";
             this.btnGrabar.UseVisualStyleBackColor = true;
             this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
@@ -112,12 +112,12 @@
             this.colCodigo,
             this.colNombre,
             this.colDeuda});
-            this.dgvClientes.Location = new System.Drawing.Point(15, 165);
-            this.dgvClientes.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvClientes.Location = new System.Drawing.Point(30, 317);
+            this.dgvClientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvClientes.Name = "dgvClientes";
             this.dgvClientes.RowHeadersWidth = 82;
             this.dgvClientes.RowTemplate.Height = 33;
-            this.dgvClientes.Size = new System.Drawing.Size(596, 182);
+            this.dgvClientes.Size = new System.Drawing.Size(1037, 350);
             this.dgvClientes.TabIndex = 7;
             // 
             // colCodigo
@@ -144,16 +144,18 @@
             // txtDeuda
             // 
             this.txtDeuda.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDeuda.Location = new System.Drawing.Point(461, 79);
+            this.txtDeuda.Location = new System.Drawing.Point(771, 156);
+            this.txtDeuda.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtDeuda.Name = "txtDeuda";
-            this.txtDeuda.Size = new System.Drawing.Size(150, 23);
-            this.txtDeuda.TabIndex = 8;
+            this.txtDeuda.Size = new System.Drawing.Size(296, 38);
+            this.txtDeuda.TabIndex = 2;
             // 
             // frmClientes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(624, 363);
+            this.BackColor = System.Drawing.Color.Honeydew;
+            this.ClientSize = new System.Drawing.Size(1080, 698);
             this.Controls.Add(this.txtDeuda);
             this.Controls.Add(this.dgvClientes);
             this.Controls.Add(this.btnGrabar);
@@ -162,7 +164,7 @@
             this.Controls.Add(this.lblCodigo);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtCodigo);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmClientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clientes";

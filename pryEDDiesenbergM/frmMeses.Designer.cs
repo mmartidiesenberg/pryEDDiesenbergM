@@ -39,29 +39,29 @@
             // 
             this.lblMes.AutoSize = true;
             this.lblMes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMes.Location = new System.Drawing.Point(20, 36);
-            this.lblMes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMes.Location = new System.Drawing.Point(40, 69);
+            this.lblMes.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMes.Name = "lblMes";
-            this.lblMes.Size = new System.Drawing.Size(34, 17);
+            this.lblMes.Size = new System.Drawing.Size(65, 31);
             this.lblMes.TabIndex = 0;
             this.lblMes.Text = "Mes";
             // 
             // txtMeses
             // 
             this.txtMeses.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMeses.Location = new System.Drawing.Point(126, 36);
-            this.txtMeses.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMeses.Location = new System.Drawing.Point(252, 69);
+            this.txtMeses.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtMeses.Name = "txtMeses";
-            this.txtMeses.Size = new System.Drawing.Size(202, 23);
+            this.txtMeses.Size = new System.Drawing.Size(400, 38);
             this.txtMeses.TabIndex = 1;
             // 
             // btnGrabar
             // 
             this.btnGrabar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGrabar.Location = new System.Drawing.Point(194, 87);
-            this.btnGrabar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnGrabar.Location = new System.Drawing.Point(388, 167);
+            this.btnGrabar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGrabar.Name = "btnGrabar";
-            this.btnGrabar.Size = new System.Drawing.Size(141, 23);
+            this.btnGrabar.Size = new System.Drawing.Size(282, 44);
             this.btnGrabar.TabIndex = 2;
             this.btnGrabar.Text = "Grabar";
             this.btnGrabar.UseVisualStyleBackColor = true;
@@ -70,10 +70,10 @@
             // btnListar
             // 
             this.btnListar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListar.Location = new System.Drawing.Point(22, 87);
-            this.btnListar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnListar.Location = new System.Drawing.Point(44, 167);
+            this.btnListar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnListar.Name = "btnListar";
-            this.btnListar.Size = new System.Drawing.Size(141, 23);
+            this.btnListar.Size = new System.Drawing.Size(282, 44);
             this.btnListar.TabIndex = 3;
             this.btnListar.Text = "Listar";
             this.btnListar.UseVisualStyleBackColor = true;
@@ -82,26 +82,29 @@
             // 
             this.lstMeses.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstMeses.FormattingEnabled = true;
-            this.lstMeses.ItemHeight = 16;
-            this.lstMeses.Location = new System.Drawing.Point(22, 139);
-            this.lstMeses.Margin = new System.Windows.Forms.Padding(2);
+            this.lstMeses.ItemHeight = 31;
+            this.lstMeses.Location = new System.Drawing.Point(44, 267);
+            this.lstMeses.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lstMeses.Name = "lstMeses";
-            this.lstMeses.Size = new System.Drawing.Size(311, 132);
+            this.lstMeses.Size = new System.Drawing.Size(618, 221);
             this.lstMeses.TabIndex = 4;
             // 
             // frmMeses
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(359, 304);
+            this.BackColor = System.Drawing.Color.Ivory;
+            this.ClientSize = new System.Drawing.Size(718, 585);
             this.Controls.Add(this.lstMeses);
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.btnGrabar);
             this.Controls.Add(this.txtMeses);
             this.Controls.Add(this.lblMes);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "frmMeses";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Meses";
+            this.Load += new System.EventHandler(this.frmMeses_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

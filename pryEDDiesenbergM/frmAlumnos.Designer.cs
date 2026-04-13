@@ -50,7 +50,7 @@
             this.lblCodigo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCodigo.Name = "lblCodigo";
             this.lblCodigo.Size = new System.Drawing.Size(108, 31);
-            this.lblCodigo.TabIndex = 0;
+            this.lblCodigo.TabIndex = 6;
             this.lblCodigo.Text = "Código:";
             // 
             // lblNombre
@@ -61,7 +61,7 @@
             this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(118, 31);
-            this.lblNombre.TabIndex = 1;
+            this.lblNombre.TabIndex = 7;
             this.lblNombre.Text = "Nombre:";
             // 
             // lblCarrera
@@ -72,45 +72,52 @@
             this.lblCarrera.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCarrera.Name = "lblCarrera";
             this.lblCarrera.Size = new System.Drawing.Size(114, 31);
-            this.lblCarrera.TabIndex = 2;
+            this.lblCarrera.TabIndex = 8;
             this.lblCarrera.Text = "Carrera:";
             // 
             // txtCodigo
             // 
             this.txtCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodigo.Location = new System.Drawing.Point(1004, 21);
+            this.txtCodigo.Location = new System.Drawing.Point(835, 26);
             this.txtCodigo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(220, 38);
-            this.txtCodigo.TabIndex = 3;
+            this.txtCodigo.TabIndex = 1;
             // 
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(574, 88);
+            this.txtNombre.Location = new System.Drawing.Point(405, 93);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(650, 38);
-            this.txtNombre.TabIndex = 4;
+            this.txtNombre.TabIndex = 2;
             // 
             // cmbCarrera
             // 
             this.cmbCarrera.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCarrera.FormattingEnabled = true;
-            this.cmbCarrera.Location = new System.Drawing.Point(800, 152);
+            this.cmbCarrera.Items.AddRange(new object[] {
+            "Análisis de sistemas",
+            "Marketing",
+            "RRHH",
+            "IA",
+            "Agronomía",
+            "Diseño Gráfico"});
+            this.cmbCarrera.Location = new System.Drawing.Point(637, 160);
             this.cmbCarrera.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbCarrera.Name = "cmbCarrera";
             this.cmbCarrera.Size = new System.Drawing.Size(418, 39);
-            this.cmbCarrera.TabIndex = 5;
+            this.cmbCarrera.TabIndex = 3;
             // 
             // btnGrabar
             // 
             this.btnGrabar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGrabar.Location = new System.Drawing.Point(1042, 242);
+            this.btnGrabar.Location = new System.Drawing.Point(875, 243);
             this.btnGrabar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGrabar.Name = "btnGrabar";
             this.btnGrabar.Size = new System.Drawing.Size(180, 42);
-            this.btnGrabar.TabIndex = 6;
+            this.btnGrabar.TabIndex = 4;
             this.btnGrabar.Text = "Grabar";
             this.btnGrabar.UseVisualStyleBackColor = true;
             this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
@@ -127,8 +134,8 @@
             this.dgvAlumnos.Name = "dgvAlumnos";
             this.dgvAlumnos.RowHeadersWidth = 82;
             this.dgvAlumnos.RowTemplate.Height = 33;
-            this.dgvAlumnos.Size = new System.Drawing.Size(1192, 350);
-            this.dgvAlumnos.TabIndex = 8;
+            this.dgvAlumnos.Size = new System.Drawing.Size(1037, 350);
+            this.dgvAlumnos.TabIndex = 5;
             // 
             // colCodigo
             // 
@@ -155,7 +162,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1248, 698);
+            this.BackColor = System.Drawing.Color.SeaShell;
+            this.ClientSize = new System.Drawing.Size(1080, 698);
             this.Controls.Add(this.dgvAlumnos);
             this.Controls.Add(this.btnGrabar);
             this.Controls.Add(this.cmbCarrera);

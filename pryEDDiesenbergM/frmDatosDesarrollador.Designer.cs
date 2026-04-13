@@ -37,18 +37,20 @@
             // lblYo
             // 
             this.lblYo.AutoSize = true;
+            this.lblYo.BackColor = System.Drawing.Color.Lavender;
             this.lblYo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblYo.Location = new System.Drawing.Point(221, 143);
+            this.lblYo.Location = new System.Drawing.Point(160, 75);
             this.lblYo.Name = "lblYo";
-            this.lblYo.Size = new System.Drawing.Size(519, 37);
+            this.lblYo.Size = new System.Drawing.Size(730, 37);
             this.lblYo.TabIndex = 0;
-            this.lblYo.Text = " Martina Diesenberg DNI 47581556";
+            this.lblYo.Text = " Mi nombre es Martina Diesenberg, DNI 47581556";
             // 
             // lblMateria
             // 
             this.lblMateria.AutoSize = true;
+            this.lblMateria.BackColor = System.Drawing.Color.Lavender;
             this.lblMateria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMateria.Location = new System.Drawing.Point(189, 218);
+            this.lblMateria.Location = new System.Drawing.Point(221, 142);
             this.lblMateria.Name = "lblMateria";
             this.lblMateria.Size = new System.Drawing.Size(597, 37);
             this.lblMateria.TabIndex = 1;
@@ -56,8 +58,9 @@
             // 
             // txtTP
             // 
+            this.txtTP.BackColor = System.Drawing.Color.Lavender;
             this.txtTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTP.Location = new System.Drawing.Point(110, 335);
+            this.txtTP.Location = new System.Drawing.Point(133, 219);
             this.txtTP.Name = "txtTP";
             this.txtTP.Size = new System.Drawing.Size(780, 44);
             this.txtTP.TabIndex = 2;
@@ -65,8 +68,9 @@
             // 
             // txtTP2
             // 
+            this.txtTP2.BackColor = System.Drawing.Color.Lavender;
             this.txtTP2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTP2.Location = new System.Drawing.Point(144, 411);
+            this.txtTP2.Location = new System.Drawing.Point(167, 260);
             this.txtTP2.Name = "txtTP2";
             this.txtTP2.Size = new System.Drawing.Size(696, 44);
             this.txtTP2.TabIndex = 3;
@@ -76,12 +80,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1046, 796);
+            this.BackColor = System.Drawing.Color.Thistle;
+            this.ClientSize = new System.Drawing.Size(1046, 408);
             this.Controls.Add(this.txtTP2);
             this.Controls.Add(this.txtTP);
             this.Controls.Add(this.lblMateria);
             this.Controls.Add(this.lblYo);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "frmDatosDesarrollador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Datos del Desarrollador";

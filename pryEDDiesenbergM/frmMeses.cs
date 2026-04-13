@@ -25,5 +25,10 @@ namespace pryEDDiesenbergM
             x.Recorrer(lstMeses);
             MessageBox.Show("Dato grabado");
         }
+
+        private void frmMeses_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
