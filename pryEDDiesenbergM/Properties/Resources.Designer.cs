@@ -109,5 +109,25 @@ namespace pryEDDiesenbergM.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_smiling_cartoon_avatar_of_a_woman_with_brown_hair_png_image_16406613__1_ {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-smiling-cartoon-avatar-of-a-woman-with-brown-hair-png-image_16406613 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_smiling_cartoon_avatar_of_a_woman_with_brown_hair_png_image_21094531 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-smiling-cartoon-avatar-of-a-woman-with-brown-hair-png-image_21094531", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
