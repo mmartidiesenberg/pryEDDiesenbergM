@@ -136,7 +136,7 @@
             this.lstCola.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstCola.FormattingEnabled = true;
             this.lstCola.ItemHeight = 16;
-            this.lstCola.Location = new System.Drawing.Point(15, 21);
+            this.lstCola.Location = new System.Drawing.Point(24, 21);
             this.lstCola.Name = "lstCola";
             this.lstCola.Size = new System.Drawing.Size(199, 180);
             this.lstCola.TabIndex = 8;
@@ -148,9 +148,9 @@
             this.lblCodigo1,
             this.Nombre,
             this.Trámite});
-            this.dgvCola.Location = new System.Drawing.Point(311, 21);
+            this.dgvCola.Location = new System.Drawing.Point(282, 21);
             this.dgvCola.Name = "dgvCola";
-            this.dgvCola.Size = new System.Drawing.Size(343, 180);
+            this.dgvCola.Size = new System.Drawing.Size(388, 180);
             this.dgvCola.TabIndex = 9;
             // 
             // gbNuevoElemento
