@@ -24,8 +24,7 @@ namespace pryEDDiesenbergM
             clsArchivoTexto objCliente = new clsArchivoTexto();
             objCliente.NomArchi = "Clientes.csv";
             objCliente.Grabar(txtCodigo.Text, txtNombre.Text, txtDeuda.Text);
-
-            MessageBox.Show("Grabado!");
+            objCliente.Recorrer(dgvClientes);
         }
 
         private void frmClientes_Load(object sender, EventArgs e)

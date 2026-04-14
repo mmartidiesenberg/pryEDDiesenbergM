@@ -23,16 +23,20 @@ namespace pryEDDiesenbergM
             clsArchivoTexto objAlumnos = new clsArchivoTexto();
             objAlumnos.NomArchi = "Alumnos.csv";
             objAlumnos.Grabar(txtCodigo.Text, txtNombre.Text, cmbCarrera.Text);
+            objAlumnos.Recorrer(dgvAlumnos);
 
-            MessageBox.Show("Grabado!");
         }
 
         private void frmAlumnos_Load(object sender, EventArgs e)
         {
-            clsArchivoTexto X = new clsArchivoTexto();
-            X.NomArchi = "Alumnos.csv";
-            if (File.Exists(X.NomArchi))
-                X.Recorrer(dgvAlumnos);
+            clsArchivoTexto objCarrera = new clsArchivoTexto();
+            objCarrera.NomArchi = "Carreras.csv";
+            if (File.Exists(objCarrera.NomArchi)) objCarrera.Recorrer(cmbCarrera);
+
+            clsArchivoTexto objAlumno = new clsArchivoTexto();
+            objAlumno.NomArchi = "Alumnos.csv";
+            if (File.Exists(objAlumno.NomArchi)) objAlumno.Recorrer(dgvAlumnos);
+
         }
     }
 }
