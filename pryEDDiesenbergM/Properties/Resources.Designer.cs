@@ -83,6 +83,16 @@ namespace pryEDDiesenbergM.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap b10 {
+            get {
+                object obj = ResourceManager.GetObject("b10", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap desktop_wallpaper_large_size_background_large_size {
             get {
                 object obj = ResourceManager.GetObject("desktop-wallpaper-large-size-background-large-size", resourceCulture);

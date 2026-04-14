@@ -264,5 +264,8 @@
   <ItemGroup>
     <None Include="Resources\desktop-wallpaper-large-size-background-large-size.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b10.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

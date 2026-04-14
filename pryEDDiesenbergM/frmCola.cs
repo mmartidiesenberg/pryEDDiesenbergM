@@ -21,5 +21,10 @@ namespace pryEDDiesenbergM
         {
 
         }
+
+        private void txtTramite_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
