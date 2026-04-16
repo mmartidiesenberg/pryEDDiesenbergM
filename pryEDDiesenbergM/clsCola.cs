@@ -37,5 +37,17 @@ namespace pryEDDiesenbergM
                 ult = Nuevo;
             }
         }
+        public void Eliminar()
+        {
+            if (Primero == Ultimo)
+            {
+                Primero = null;
+                Ultimo = null;
+            }
+            else
+            { 
+            Primero = Primero.Siguiente;
+            }
+        }
     }
 }
