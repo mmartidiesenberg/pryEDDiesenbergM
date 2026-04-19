@@ -39,7 +39,7 @@
             // 
             this.btnListar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnListar.Location = new System.Drawing.Point(44, 167);
-            this.btnListar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnListar.Margin = new System.Windows.Forms.Padding(6);
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(282, 44);
             this.btnListar.TabIndex = 2;
@@ -50,7 +50,7 @@
             // 
             this.btnGrabar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGrabar.Location = new System.Drawing.Point(368, 167);
-            this.btnGrabar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnGrabar.Margin = new System.Windows.Forms.Padding(6);
             this.btnGrabar.Name = "btnGrabar";
             this.btnGrabar.Size = new System.Drawing.Size(282, 44);
             this.btnGrabar.TabIndex = 3;
@@ -76,7 +76,7 @@
             this.lstCarreras.FormattingEnabled = true;
             this.lstCarreras.ItemHeight = 30;
             this.lstCarreras.Location = new System.Drawing.Point(50, 285);
-            this.lstCarreras.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.lstCarreras.Margin = new System.Windows.Forms.Padding(6);
             this.lstCarreras.Name = "lstCarreras";
             this.lstCarreras.Size = new System.Drawing.Size(618, 244);
             this.lstCarreras.TabIndex = 4;
@@ -85,7 +85,7 @@
             // 
             this.txtCarreras.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCarreras.Location = new System.Drawing.Point(290, 73);
-            this.txtCarreras.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtCarreras.Margin = new System.Windows.Forms.Padding(6);
             this.txtCarreras.Name = "txtCarreras";
             this.txtCarreras.Size = new System.Drawing.Size(400, 37);
             this.txtCarreras.TabIndex = 1;
@@ -101,7 +101,8 @@
             this.Controls.Add(this.lblCarreras);
             this.Controls.Add(this.btnGrabar);
             this.Controls.Add(this.btnListar);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "frmCarreras";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Carreras";

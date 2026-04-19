@@ -79,7 +79,7 @@
             // 
             this.txtCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodigo.Location = new System.Drawing.Point(835, 26);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(4);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(220, 38);
             this.txtCodigo.TabIndex = 1;
@@ -88,7 +88,7 @@
             // 
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.Location = new System.Drawing.Point(405, 93);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(650, 38);
             this.txtNombre.TabIndex = 2;
@@ -105,7 +105,7 @@
             "Agronomía",
             "Diseño Gráfico"});
             this.cmbCarrera.Location = new System.Drawing.Point(637, 160);
-            this.cmbCarrera.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbCarrera.Margin = new System.Windows.Forms.Padding(4);
             this.cmbCarrera.Name = "cmbCarrera";
             this.cmbCarrera.Size = new System.Drawing.Size(418, 39);
             this.cmbCarrera.TabIndex = 3;
@@ -114,7 +114,7 @@
             // 
             this.btnGrabar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGrabar.Location = new System.Drawing.Point(875, 243);
-            this.btnGrabar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGrabar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGrabar.Name = "btnGrabar";
             this.btnGrabar.Size = new System.Drawing.Size(180, 42);
             this.btnGrabar.TabIndex = 4;
@@ -130,7 +130,7 @@
             this.colNombre,
             this.colCarrera});
             this.dgvAlumnos.Location = new System.Drawing.Point(18, 331);
-            this.dgvAlumnos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvAlumnos.Margin = new System.Windows.Forms.Padding(4);
             this.dgvAlumnos.Name = "dgvAlumnos";
             this.dgvAlumnos.RowHeadersWidth = 82;
             this.dgvAlumnos.RowTemplate.Height = 33;
@@ -172,7 +172,8 @@
             this.Controls.Add(this.lblCarrera);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblCodigo);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmAlumnos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alumnos";

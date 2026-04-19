@@ -50,7 +50,7 @@
             // 
             this.txtMeses.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMeses.Location = new System.Drawing.Point(252, 69);
-            this.txtMeses.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMeses.Margin = new System.Windows.Forms.Padding(4);
             this.txtMeses.Name = "txtMeses";
             this.txtMeses.Size = new System.Drawing.Size(400, 38);
             this.txtMeses.TabIndex = 1;
@@ -59,7 +59,7 @@
             // 
             this.btnGrabar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGrabar.Location = new System.Drawing.Point(388, 167);
-            this.btnGrabar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGrabar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGrabar.Name = "btnGrabar";
             this.btnGrabar.Size = new System.Drawing.Size(282, 44);
             this.btnGrabar.TabIndex = 2;
@@ -71,7 +71,7 @@
             // 
             this.btnListar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnListar.Location = new System.Drawing.Point(44, 167);
-            this.btnListar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnListar.Margin = new System.Windows.Forms.Padding(4);
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(282, 44);
             this.btnListar.TabIndex = 3;
@@ -84,7 +84,7 @@
             this.lstMeses.FormattingEnabled = true;
             this.lstMeses.ItemHeight = 31;
             this.lstMeses.Location = new System.Drawing.Point(44, 267);
-            this.lstMeses.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lstMeses.Margin = new System.Windows.Forms.Padding(4);
             this.lstMeses.Name = "lstMeses";
             this.lstMeses.Size = new System.Drawing.Size(618, 221);
             this.lstMeses.TabIndex = 4;
@@ -100,7 +100,8 @@
             this.Controls.Add(this.btnGrabar);
             this.Controls.Add(this.txtMeses);
             this.Controls.Add(this.lblMes);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "frmMeses";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Meses";

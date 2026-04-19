@@ -64,7 +64,7 @@
             // 
             this.pictureBox1.Image = global::pryEDDiesenbergM.Properties.Resources.pngtree_smiling_cartoon_avatar_of_a_woman_with_brown_hair_png_image_16406613__1_;
             this.pictureBox1.Location = new System.Drawing.Point(288, 271);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(420, 312);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -102,7 +102,8 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblMateria);
             this.Controls.Add(this.lblYo);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "frmDatosDesarrollador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Datos del Desarrollador";

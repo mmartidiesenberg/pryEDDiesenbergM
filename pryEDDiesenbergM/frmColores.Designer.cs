@@ -39,7 +39,7 @@
             // 
             this.txtColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtColor.Location = new System.Drawing.Point(252, 69);
-            this.txtColor.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtColor.Margin = new System.Windows.Forms.Padding(6);
             this.txtColor.Name = "txtColor";
             this.txtColor.Size = new System.Drawing.Size(400, 38);
             this.txtColor.TabIndex = 0;
@@ -48,7 +48,7 @@
             // 
             this.btnListar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnListar.Location = new System.Drawing.Point(44, 167);
-            this.btnListar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnListar.Margin = new System.Windows.Forms.Padding(6);
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(282, 44);
             this.btnListar.TabIndex = 1;
@@ -59,7 +59,7 @@
             // 
             this.btnGrabar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGrabar.Location = new System.Drawing.Point(368, 167);
-            this.btnGrabar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnGrabar.Margin = new System.Windows.Forms.Padding(6);
             this.btnGrabar.Name = "btnGrabar";
             this.btnGrabar.Size = new System.Drawing.Size(282, 44);
             this.btnGrabar.TabIndex = 2;
@@ -84,7 +84,7 @@
             this.lstColores.FormattingEnabled = true;
             this.lstColores.ItemHeight = 31;
             this.lstColores.Location = new System.Drawing.Point(44, 267);
-            this.lstColores.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lstColores.Margin = new System.Windows.Forms.Padding(4);
             this.lstColores.Name = "lstColores";
             this.lstColores.Size = new System.Drawing.Size(618, 221);
             this.lstColores.TabIndex = 3;
@@ -100,7 +100,8 @@
             this.Controls.Add(this.btnGrabar);
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.txtColor);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "frmColores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Colores";
