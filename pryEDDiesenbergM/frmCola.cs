@@ -36,9 +36,9 @@ namespace pryEDDiesenbergM
         {
             if (fila.Primero != null)
             {
-                lblCodigo.Text = fila.Primero.Codigo.ToString();   
-                lblNombre.Text = fila.Primero.Nombre;
-                lblTramite.Text = fila.Primero.Tramite; 
+                lblCodigo2.Text = fila.Primero.Codigo.ToString();   
+                lblNombre2.Text = fila.Primero.Nombre;
+                lblTramite2.Text = fila.Primero.Tramite; 
                 fila.Eliminar();
                 fila.Recorrer(dgvCola);
                 fila.Recorrer(lstCola);

@@ -36,7 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "frmPila";
-            this.Text = "Pila";
+            this.Text = "Estructura de Datos: PILA";
             this.ResumeLayout(false);
 
         }
