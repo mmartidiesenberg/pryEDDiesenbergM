@@ -63,6 +63,16 @@ namespace pryEDDiesenbergM.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _81B04B5B_46F8_4DF9_9299_D66FB98D8340_ {
+            get {
+                object obj = ResourceManager.GetObject("{81B04B5B-46F8-4DF9-9299-D66FB98D8340}", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _896a7316c592ed79c6be5338b1251656 {
             get {
                 object obj = ResourceManager.GetObject("896a7316c592ed79c6be5338b1251656", resourceCulture);
