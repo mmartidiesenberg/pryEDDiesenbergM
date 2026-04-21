@@ -275,5 +275,8 @@
   <ItemGroup>
     <None Include="Resources\pngtree-smiling-cartoon-avatar-of-a-woman-with-brown-hair-png-image_16406613 %281%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images1.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
