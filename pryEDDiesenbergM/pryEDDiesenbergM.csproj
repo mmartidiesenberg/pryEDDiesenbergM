@@ -278,5 +278,8 @@
   <ItemGroup>
     <None Include="Resources\images1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lista-enlazada.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
