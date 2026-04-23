@@ -336,7 +336,7 @@
             this.Controls.Add(this.gbNuevoElemento);
             this.Controls.Add(this.pictureBox1);
             this.Name = "frmPila";
-            this.Text = "Estructura de Datos: PILA";
+            this.Text = "Estructura de Datos: Pila";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.gbElEliminado.ResumeLayout(false);
             this.gbElEliminado.PerformLayout();
