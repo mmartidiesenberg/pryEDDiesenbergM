@@ -50,5 +50,57 @@ namespace pryEDDiesenbergM
                 aux = aux.Siguiente;
             }
         }
+        public void Recorrer (String NombreArchivo)
+        {
+            clsNodo aux = Primero;
+            using (StreamWriter AD = new StreamWriter(NombreArchivo, false, Encoding.UTF8))
+            {
+                AD.WriteLine("Codigo;Nombre;Tramite");
+                while (aux != null)
+                {
+                    AD.WriteLine($"{aux.Codigo};{aux.Nombre};{aux.Tramite}");
+                    aux = aux.Siguiente;
+                }
+            }
+        }
+        public void Recorrer(ListBox Lista)
+        {
+            clsNodo aux = Primero;
+            Lista.Items.Clear();
+            while (aux != null)
+            {
+                Lista.Items.Add(aux.Codigo);
+                aux = aux.Siguiente;
+            }
+        }
+
+        public void Recorrer(ComboBox Combo)
+        {
+            clsNodo aux = Primero;
+            Combo.Items.Clear();
+            while (aux != null)
+            {
+                Combo.Items.Add(aux.Nombre);
+                aux = aux.Siguiente;
+            }
+        }
+
+        public void Recorrer()
+        {
+            clsNodo aux = Primero;
+            StreamWriter AD = new StreamWriter("Cola.csv", false, Encoding.UTF8);
+            AD.WriteLine("Lista de espera\n");
+            AD.WriteLine("Código;Nombre;Trámite");
+            while (aux != null)
+            {
+                AD.Write(aux.Codigo);
+                AD.Write(";");
+                AD.Write(aux.Nombre);
+                AD.Write(";");
+                AD.WriteLine(aux.Tramite);
+                aux = aux.Siguiente;
+            }
+            AD.Close();
+        }
     }
 }
