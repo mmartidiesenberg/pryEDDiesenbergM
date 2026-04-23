@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace pryEDDiesenbergM
 {
@@ -27,7 +29,26 @@ namespace pryEDDiesenbergM
                 Nuevo.Siguiente = Primero;
                 Primero = Nuevo;
             }
+
         }
-       
+
+    public void Eliminar()
+        {
+            if (Primero != null)
+            {
+                Primero = Primero.Siguiente;
+            }
+        }
+
+        public void Recorrer(DataGridView Grilla)
+        {
+            clsNodo aux = Primero;
+            Grilla.Rows.Clear();
+            while (aux != null)
+            {
+                Grilla.Rows.Add(aux.Codigo, aux.Nombre, aux.Tramite);
+                aux = aux.Siguiente;
+            }
+        }
     }
 }
