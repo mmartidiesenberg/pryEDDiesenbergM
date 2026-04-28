@@ -95,5 +95,25 @@ namespace pryEDDiesenbergM
             }
             AD.Close();
         }
+
+        public void Eliminar1(Int32 Codigo)
+        { 
+            if (Primero.Codigo == Codigo)
+            {
+                Primero = Primero.Siguiente;
+
+            }
+            else
+            {
+                clsNodo aux1 = Primero;
+                clsNodo aux2 = Primero;
+                while (aux1.Codigo != Codigo)
+                {
+                    aux2 = aux1;
+                    aux1 = aux1.Siguiente;
+                }
+                aux2.Siguiente = aux1.Siguiente;
+            }
+        }
     }
 }

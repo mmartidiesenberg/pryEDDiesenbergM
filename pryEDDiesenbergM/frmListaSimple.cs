@@ -45,5 +45,10 @@ namespace pryEDDiesenbergM
             txtNombre.Text = "";
             txtTramite.Text = "";
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
