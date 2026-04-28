@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+//cola: es una estructura de datos lineal, dinamica, FIFO (First In First Out)
 namespace pryEDDiesenbergM
 {
     public partial class frmCola : Form

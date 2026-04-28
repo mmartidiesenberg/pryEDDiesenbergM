@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+//Pila: estructura de datos lineal, dinamica. La ultima que entra es la primera que sale.
 namespace pryEDDiesenbergM
 {
     public partial class frmPila : Form
@@ -47,6 +48,11 @@ namespace pryEDDiesenbergM
                 Pila.Recorrer(lstPila);
                 Pila.Recorrer();
             }
+        }
+
+        private void frmPila_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
