@@ -32,7 +32,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gbEAEliminar = new System.Windows.Forms.GroupBox();
             this.btnEliminar = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbLista = new System.Windows.Forms.ComboBox();
             this.lblCod = new System.Windows.Forms.Label();
             this.gbNuevoElemento = new System.Windows.Forms.GroupBox();
             this.lblCodigo = new System.Windows.Forms.Label();
@@ -47,7 +47,7 @@
             this.rbAscendente = new System.Windows.Forms.RadioButton();
             this.gbListado = new System.Windows.Forms.GroupBox();
             this.lstListaDoble = new System.Windows.Forms.ListBox();
-            this.dgvListaSimple = new System.Windows.Forms.DataGridView();
+            this.dgvListaDoble = new System.Windows.Forms.DataGridView();
             this.lblCodigo1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Trámite = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,14 +56,14 @@
             this.gbNuevoElemento.SuspendLayout();
             this.gbListarDatos.SuspendLayout();
             this.gbListado.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvListaSimple)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListaDoble)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // gbEAEliminar
             // 
             this.gbEAEliminar.Controls.Add(this.btnEliminar);
-            this.gbEAEliminar.Controls.Add(this.comboBox1);
+            this.gbEAEliminar.Controls.Add(this.cmbLista);
             this.gbEAEliminar.Controls.Add(this.lblCod);
             this.gbEAEliminar.Location = new System.Drawing.Point(524, 11);
             this.gbEAEliminar.Name = "gbEAEliminar";
@@ -83,13 +83,13 @@
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
-            // comboBox1
+            // cmbLista
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(112, 21);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(106, 21);
-            this.comboBox1.TabIndex = 4;
+            this.cmbLista.FormattingEnabled = true;
+            this.cmbLista.Location = new System.Drawing.Point(112, 21);
+            this.cmbLista.Name = "cmbLista";
+            this.cmbLista.Size = new System.Drawing.Size(106, 21);
+            this.cmbLista.TabIndex = 4;
             // 
             // lblCod
             // 
@@ -167,6 +167,7 @@
             this.btnAgregar.TabIndex = 3;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // lblNombre
             // 
@@ -228,7 +229,7 @@
             // gbListado
             // 
             this.gbListado.Controls.Add(this.lstListaDoble);
-            this.gbListado.Controls.Add(this.dgvListaSimple);
+            this.gbListado.Controls.Add(this.dgvListaDoble);
             this.gbListado.Location = new System.Drawing.Point(10, 211);
             this.gbListado.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.gbListado.Name = "gbListado";
@@ -249,7 +250,7 @@
             this.lstListaDoble.Size = new System.Drawing.Size(228, 196);
             this.lstListaDoble.TabIndex = 8;
             // 
-            // dgvListaSimple
+            // dgvListaDoble
             // 
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
@@ -258,9 +259,9 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvListaSimple.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvListaSimple.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvListaSimple.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvListaDoble.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvListaDoble.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvListaDoble.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.lblCodigo1,
             this.Nombre,
             this.Trámite});
@@ -271,13 +272,13 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvListaSimple.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvListaSimple.Location = new System.Drawing.Point(283, 33);
-            this.dgvListaSimple.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.dgvListaSimple.Name = "dgvListaSimple";
-            this.dgvListaSimple.RowHeadersWidth = 82;
-            this.dgvListaSimple.Size = new System.Drawing.Size(449, 207);
-            this.dgvListaSimple.TabIndex = 9;
+            this.dgvListaDoble.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvListaDoble.Location = new System.Drawing.Point(283, 33);
+            this.dgvListaDoble.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
+            this.dgvListaDoble.Name = "dgvListaDoble";
+            this.dgvListaDoble.RowHeadersWidth = 82;
+            this.dgvListaDoble.Size = new System.Drawing.Size(449, 207);
+            this.dgvListaDoble.TabIndex = 9;
             // 
             // lblCodigo1
             // 
@@ -323,6 +324,7 @@
             this.Name = "frmListaDoble";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lista Doble";
+            this.Load += new System.EventHandler(this.frmListaDoble_Load);
             this.gbEAEliminar.ResumeLayout(false);
             this.gbEAEliminar.PerformLayout();
             this.gbNuevoElemento.ResumeLayout(false);
@@ -330,7 +332,7 @@
             this.gbListarDatos.ResumeLayout(false);
             this.gbListarDatos.PerformLayout();
             this.gbListado.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvListaSimple)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListaDoble)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -340,7 +342,7 @@
 
         private System.Windows.Forms.GroupBox gbEAEliminar;
         private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbLista;
         private System.Windows.Forms.Label lblCod;
         private System.Windows.Forms.GroupBox gbNuevoElemento;
         private System.Windows.Forms.Label lblCodigo;
@@ -355,7 +357,7 @@
         private System.Windows.Forms.RadioButton rbAscendente;
         private System.Windows.Forms.GroupBox gbListado;
         private System.Windows.Forms.ListBox lstListaDoble;
-        private System.Windows.Forms.DataGridView dgvListaSimple;
+        private System.Windows.Forms.DataGridView dgvListaDoble;
         private System.Windows.Forms.DataGridViewTextBoxColumn lblCodigo1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Trámite;

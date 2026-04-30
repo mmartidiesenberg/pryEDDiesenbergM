@@ -45,7 +45,7 @@ namespace pryEDDiesenbergM
                 }
             }
         }
-            public void Recorrer(DataGridView Grilla)
+        public void Recorrer(DataGridView Grilla)
         {
             clsNodo aux = Primero;
             Grilla.Rows.Clear();
@@ -81,7 +81,7 @@ namespace pryEDDiesenbergM
         public void Recorrer()
         {
             clsNodo aux = Primero;
-            StreamWriter AD = new StreamWriter("Lista.csv", false, Encoding.UTF8);
+            StreamWriter AD = new StreamWriter("ListaSimple.csv", false, Encoding.UTF8);
             AD.WriteLine("Lista de espera\n");
             AD.WriteLine("Código;Nombre;Trámite");
             while (aux != null)
