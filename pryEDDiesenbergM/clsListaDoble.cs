@@ -104,7 +104,7 @@ namespace pryEDDiesenbergM
         {
             clsNodo aux = Primero;
             StreamWriter AD = new StreamWriter("ListaDoble.csv", false, Encoding.UTF8);
-            AD.WriteLine("Lista de espera\n");
+            AD.WriteLine("Lista de Personas Ordenada por Codigo\n");
             AD.WriteLine("Código;Nombre;Trámite");
             while (aux != null)
             {

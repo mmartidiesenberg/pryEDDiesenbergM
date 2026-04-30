@@ -77,6 +77,20 @@ namespace pryEDDiesenbergM
                 aux = aux.Siguiente;
             }
         }
+        public void Recorrer(string fileName)
+        {
+            clsNodo aux = Primero;
+            using (StreamWriter AD = new StreamWriter(fileName, false, Encoding.UTF8))
+            {
+                AD.WriteLine("Codigo;Nombre;Tramite");
+                while (aux != null)
+                {
+                    AD.WriteLine($"{aux.Codigo};{aux.Nombre};{aux.Tramite}");
+                    aux = aux.Siguiente;
+                }
+            }
+        }
+
 
         public void Recorrer()
         {
