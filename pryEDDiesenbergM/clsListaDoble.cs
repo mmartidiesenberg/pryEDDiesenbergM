@@ -60,6 +60,7 @@ namespace pryEDDiesenbergM
                         Ant.Siguiente = Nvo;
                         Nvo.Siguiente = Aux;
                         Aux.Anterior = Nvo;
+                        Nvo.Anterior = Ant;
                     }
                 }
             }
