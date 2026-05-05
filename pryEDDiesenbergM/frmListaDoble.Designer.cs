@@ -32,7 +32,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gbEAEliminar = new System.Windows.Forms.GroupBox();
             this.btnEliminar = new System.Windows.Forms.Button();
-            this.cmbLista = new System.Windows.Forms.ComboBox();
+            this.cmbCodigo = new System.Windows.Forms.ComboBox();
             this.lblCod = new System.Windows.Forms.Label();
             this.gbNuevoElemento = new System.Windows.Forms.GroupBox();
             this.lblCodigo = new System.Windows.Forms.Label();
@@ -43,8 +43,8 @@
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblTramite = new System.Windows.Forms.Label();
             this.gbListarDatos = new System.Windows.Forms.GroupBox();
-            this.rbDescente = new System.Windows.Forms.RadioButton();
-            this.rbAscendente = new System.Windows.Forms.RadioButton();
+            this.btnDesc = new System.Windows.Forms.RadioButton();
+            this.btnAsc = new System.Windows.Forms.RadioButton();
             this.gbListado = new System.Windows.Forms.GroupBox();
             this.lstListaDoble = new System.Windows.Forms.ListBox();
             this.dgvListaDoble = new System.Windows.Forms.DataGridView();
@@ -63,7 +63,7 @@
             // gbEAEliminar
             // 
             this.gbEAEliminar.Controls.Add(this.btnEliminar);
-            this.gbEAEliminar.Controls.Add(this.cmbLista);
+            this.gbEAEliminar.Controls.Add(this.cmbCodigo);
             this.gbEAEliminar.Controls.Add(this.lblCod);
             this.gbEAEliminar.Location = new System.Drawing.Point(524, 11);
             this.gbEAEliminar.Name = "gbEAEliminar";
@@ -83,13 +83,14 @@
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
-            // cmbLista
+            // cmbCodigo
             // 
-            this.cmbLista.FormattingEnabled = true;
-            this.cmbLista.Location = new System.Drawing.Point(112, 21);
-            this.cmbLista.Name = "cmbLista";
-            this.cmbLista.Size = new System.Drawing.Size(106, 21);
-            this.cmbLista.TabIndex = 4;
+            this.cmbCodigo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCodigo.FormattingEnabled = true;
+            this.cmbCodigo.Location = new System.Drawing.Point(112, 21);
+            this.cmbCodigo.Name = "cmbCodigo";
+            this.cmbCodigo.Size = new System.Drawing.Size(106, 21);
+            this.cmbCodigo.TabIndex = 4;
             // 
             // lblCod
             // 
@@ -193,8 +194,8 @@
             // 
             // gbListarDatos
             // 
-            this.gbListarDatos.Controls.Add(this.rbDescente);
-            this.gbListarDatos.Controls.Add(this.rbAscendente);
+            this.gbListarDatos.Controls.Add(this.btnDesc);
+            this.gbListarDatos.Controls.Add(this.btnAsc);
             this.gbListarDatos.Location = new System.Drawing.Point(524, 106);
             this.gbListarDatos.Name = "gbListarDatos";
             this.gbListarDatos.Size = new System.Drawing.Size(240, 100);
@@ -202,29 +203,31 @@
             this.gbListarDatos.TabStop = false;
             this.gbListarDatos.Text = "Listar Datos";
             // 
-            // rbDescente
+            // btnDesc
             // 
-            this.rbDescente.AutoSize = true;
-            this.rbDescente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbDescente.Location = new System.Drawing.Point(6, 54);
-            this.rbDescente.Name = "rbDescente";
-            this.rbDescente.Size = new System.Drawing.Size(106, 20);
-            this.rbDescente.TabIndex = 7;
-            this.rbDescente.TabStop = true;
-            this.rbDescente.Text = "Descendente";
-            this.rbDescente.UseVisualStyleBackColor = true;
+            this.btnDesc.AutoSize = true;
+            this.btnDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDesc.Location = new System.Drawing.Point(6, 54);
+            this.btnDesc.Name = "btnDesc";
+            this.btnDesc.Size = new System.Drawing.Size(106, 20);
+            this.btnDesc.TabIndex = 7;
+            this.btnDesc.TabStop = true;
+            this.btnDesc.Text = "Descendente";
+            this.btnDesc.UseVisualStyleBackColor = true;
+            this.btnDesc.CheckedChanged += new System.EventHandler(this.btnDesc_CheckedChanged);
             // 
-            // rbAscendente
+            // btnAsc
             // 
-            this.rbAscendente.AutoSize = true;
-            this.rbAscendente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbAscendente.Location = new System.Drawing.Point(6, 19);
-            this.rbAscendente.Name = "rbAscendente";
-            this.rbAscendente.Size = new System.Drawing.Size(97, 20);
-            this.rbAscendente.TabIndex = 6;
-            this.rbAscendente.TabStop = true;
-            this.rbAscendente.Text = "Ascendente";
-            this.rbAscendente.UseVisualStyleBackColor = true;
+            this.btnAsc.AutoSize = true;
+            this.btnAsc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAsc.Location = new System.Drawing.Point(6, 19);
+            this.btnAsc.Name = "btnAsc";
+            this.btnAsc.Size = new System.Drawing.Size(97, 20);
+            this.btnAsc.TabIndex = 6;
+            this.btnAsc.TabStop = true;
+            this.btnAsc.Text = "Ascendente";
+            this.btnAsc.UseVisualStyleBackColor = true;
+            this.btnAsc.CheckedChanged += new System.EventHandler(this.btnAsc_CheckedChanged);
             // 
             // gbListado
             // 
@@ -342,7 +345,7 @@
 
         private System.Windows.Forms.GroupBox gbEAEliminar;
         private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.ComboBox cmbLista;
+        private System.Windows.Forms.ComboBox cmbCodigo;
         private System.Windows.Forms.Label lblCod;
         private System.Windows.Forms.GroupBox gbNuevoElemento;
         private System.Windows.Forms.Label lblCodigo;
@@ -353,8 +356,8 @@
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblTramite;
         private System.Windows.Forms.GroupBox gbListarDatos;
-        private System.Windows.Forms.RadioButton rbDescente;
-        private System.Windows.Forms.RadioButton rbAscendente;
+        private System.Windows.Forms.RadioButton btnDesc;
+        private System.Windows.Forms.RadioButton btnAsc;
         private System.Windows.Forms.GroupBox gbListado;
         private System.Windows.Forms.ListBox lstListaDoble;
         private System.Windows.Forms.DataGridView dgvListaDoble;

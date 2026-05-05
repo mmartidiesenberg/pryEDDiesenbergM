@@ -38,6 +38,7 @@ namespace pryEDDiesenbergM
             n.Tramite = txtTramite.Text;
 
             lista.Agregar(n);
+            lista.Recorrer(cmbCodigo);
             lista.Recorrer(dgvLista);
             lista.Recorrer(lstLista);
 
@@ -48,7 +49,25 @@ namespace pryEDDiesenbergM
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            
+            if (cmbCodigo.SelectedIndex == -1) return;
+            string codigoSeleccionado = cmbCodigo.SelectedItem.ToString();
+            foreach (DataGridViewRow fila in dgvLista.Rows)
+            {
+                if (fila.Cells[0].Value.ToString() == codigoSeleccionado)
+                {
+                    dgvLista.Rows.RemoveAt(fila.Index);
+                    break;
+                }
+            }
+            foreach (var item in lstLista.Items)
+            {
+                if (item.ToString().Contains(codigoSeleccionado))
+                {
+                    lstLista.Items.Remove(item);
+                    break;
+                }
+            }
+            cmbCodigo.Items.Remove(cmbCodigo.SelectedItem);
         }
     }
 }
