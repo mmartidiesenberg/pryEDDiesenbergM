@@ -269,7 +269,7 @@
             this.Controls.Add(this.gbNuevoElemento);
             this.Name = "frmArbol";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Arbol";
+            this.Text = "Estructuras Ramificadas - Árbol Binario";
             this.gbNuevoElemento.ResumeLayout(false);
             this.gbNuevoElemento.PerformLayout();
             this.gbEAEliminar.ResumeLayout(false);
