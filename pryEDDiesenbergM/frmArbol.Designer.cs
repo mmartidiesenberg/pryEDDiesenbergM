@@ -41,10 +41,10 @@
             this.cmbCodigo = new System.Windows.Forms.ComboBox();
             this.lblCod = new System.Windows.Forms.Label();
             this.gbListadoArbol = new System.Windows.Forms.GroupBox();
-            this.rbInOrden = new System.Windows.Forms.RadioButton();
-            this.rbPreOrden = new System.Windows.Forms.RadioButton();
-            this.rbPostOrden = new System.Windows.Forms.RadioButton();
             this.dgvArbol = new System.Windows.Forms.DataGridView();
+            this.rbPostOrden = new System.Windows.Forms.RadioButton();
+            this.rbPreOrden = new System.Windows.Forms.RadioButton();
+            this.rbInOrden = new System.Windows.Forms.RadioButton();
             this.tvArbol = new System.Windows.Forms.TreeView();
             this.btnEquilibrar = new System.Windows.Forms.Button();
             this.gbNuevoElemento.SuspendLayout();
@@ -119,6 +119,7 @@
             this.btnAgregar.TabIndex = 3;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // lblNombre
             // 
@@ -199,27 +200,13 @@
             this.gbListadoArbol.TabStop = false;
             this.gbListadoArbol.Text = "Listado del árbol";
             // 
-            // rbInOrden
+            // dgvArbol
             // 
-            this.rbInOrden.AutoSize = true;
-            this.rbInOrden.Location = new System.Drawing.Point(32, 38);
-            this.rbInOrden.Name = "rbInOrden";
-            this.rbInOrden.Size = new System.Drawing.Size(76, 20);
-            this.rbInOrden.TabIndex = 0;
-            this.rbInOrden.TabStop = true;
-            this.rbInOrden.Text = "In-Orden";
-            this.rbInOrden.UseVisualStyleBackColor = true;
-            // 
-            // rbPreOrden
-            // 
-            this.rbPreOrden.AutoSize = true;
-            this.rbPreOrden.Location = new System.Drawing.Point(32, 88);
-            this.rbPreOrden.Name = "rbPreOrden";
-            this.rbPreOrden.Size = new System.Drawing.Size(87, 20);
-            this.rbPreOrden.TabIndex = 1;
-            this.rbPreOrden.TabStop = true;
-            this.rbPreOrden.Text = "Pre-Orden";
-            this.rbPreOrden.UseVisualStyleBackColor = true;
+            this.dgvArbol.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvArbol.Location = new System.Drawing.Point(163, 21);
+            this.dgvArbol.Name = "dgvArbol";
+            this.dgvArbol.Size = new System.Drawing.Size(572, 157);
+            this.dgvArbol.TabIndex = 3;
             // 
             // rbPostOrden
             // 
@@ -232,13 +219,27 @@
             this.rbPostOrden.Text = "Post-Orden";
             this.rbPostOrden.UseVisualStyleBackColor = true;
             // 
-            // dgvArbol
+            // rbPreOrden
             // 
-            this.dgvArbol.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvArbol.Location = new System.Drawing.Point(163, 21);
-            this.dgvArbol.Name = "dgvArbol";
-            this.dgvArbol.Size = new System.Drawing.Size(572, 157);
-            this.dgvArbol.TabIndex = 3;
+            this.rbPreOrden.AutoSize = true;
+            this.rbPreOrden.Location = new System.Drawing.Point(32, 88);
+            this.rbPreOrden.Name = "rbPreOrden";
+            this.rbPreOrden.Size = new System.Drawing.Size(87, 20);
+            this.rbPreOrden.TabIndex = 1;
+            this.rbPreOrden.TabStop = true;
+            this.rbPreOrden.Text = "Pre-Orden";
+            this.rbPreOrden.UseVisualStyleBackColor = true;
+            // 
+            // rbInOrden
+            // 
+            this.rbInOrden.AutoSize = true;
+            this.rbInOrden.Location = new System.Drawing.Point(32, 38);
+            this.rbInOrden.Name = "rbInOrden";
+            this.rbInOrden.Size = new System.Drawing.Size(76, 20);
+            this.rbInOrden.TabIndex = 0;
+            this.rbInOrden.TabStop = true;
+            this.rbInOrden.Text = "In-Orden";
+            this.rbInOrden.UseVisualStyleBackColor = true;
             // 
             // tvArbol
             // 

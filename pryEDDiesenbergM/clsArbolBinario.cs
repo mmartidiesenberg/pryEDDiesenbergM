@@ -37,7 +37,7 @@ namespace pryEDDiesenbergM
             }
         }
 
-        public void Recorrer (DataGridView Grilla)
+        public void Recorrer (DataGridView Grilla )
         {
             Grilla.Rows.Clear();
             InOrdenAsc(Grilla, Raiz);
