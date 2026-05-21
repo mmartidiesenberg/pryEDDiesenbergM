@@ -26,7 +26,9 @@ namespace pryEDDiesenbergM
             Persona.Tramite = txtTramite.Text;
 
             ObjArbol.Agregar(Persona);
-   
+            ObjArbol.Recorrer(dgvArbol);
+            ObjArbol.Recorrer(tvArbol);
+
         }
     }
 }

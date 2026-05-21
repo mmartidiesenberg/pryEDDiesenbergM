@@ -43,11 +43,41 @@ namespace pryEDDiesenbergM
             InOrdenAsc(Grilla, Raiz);
         }
 
+        public void Recorrer (TreeView tree)
+        {
+            tree.Nodes.Clear();
+            TreeNode NodoPadre = new TreeNode("Árbol");
+            tree.Nodes.Add(NodoPadre);
+            PreOrden(Raiz, NodoPadre);
+            tree.ExpandAll();
+        }
+
+        private void PreOrden(clsNodo R, TreeNode nodoTreeView)
+        {
+            TreeNode NodoPadre = new TreeNode(R.Codigo.ToString());
+            nodoTreeView.Nodes.Add(NodoPadre);
+            if (R.Izquierdo != null) PreOrden(R.Izquierdo, NodoPadre);
+            if(R.Derecho != null) PreOrden(R.Derecho, NodoPadre);
+        }
+
         private void InOrdenAsc(DataGridView Dgv, clsNodo R)
         {
             if (R.Izquierdo != null) InOrdenAsc(Dgv, R.Izquierdo);
             Dgv.Rows.Add(R.Codigo, R.Nombre, R.Tramite);
             if (R.Derecho != null) InOrdenAsc(Dgv, R.Derecho);
+        }
+
+        public void InOrdenDesc(ListBox Lst, clsNodo R)
+        {
+            if (R.Derecho != null)
+            {
+                InOrdenDesc(Lst, R.Derecho);
+            }
+            Lst.Items.Add(R.Codigo);
+            if (R.Izquierdo != null)
+            {
+                InOrdenDesc(Lst, R.Izquierdo);
+            }
         }
     }
 }
