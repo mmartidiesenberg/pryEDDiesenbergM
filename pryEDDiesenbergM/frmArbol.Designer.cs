@@ -47,6 +47,9 @@
             this.rbInOrden = new System.Windows.Forms.RadioButton();
             this.tvArbol = new System.Windows.Forms.TreeView();
             this.btnEquilibrar = new System.Windows.Forms.Button();
+            this.colCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTramite = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbNuevoElemento.SuspendLayout();
             this.gbEAEliminar.SuspendLayout();
             this.gbListadoArbol.SuspendLayout();
@@ -203,6 +206,10 @@
             // dgvArbol
             // 
             this.dgvArbol.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvArbol.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colCodigo,
+            this.colNombre,
+            this.colTramite});
             this.dgvArbol.Location = new System.Drawing.Point(163, 21);
             this.dgvArbol.Name = "dgvArbol";
             this.dgvArbol.Size = new System.Drawing.Size(572, 157);
@@ -258,6 +265,21 @@
             this.btnEquilibrar.Text = "Equilibrar";
             this.btnEquilibrar.UseVisualStyleBackColor = true;
             // 
+            // colCodigo
+            // 
+            this.colCodigo.HeaderText = "Codigo";
+            this.colCodigo.Name = "colCodigo";
+            // 
+            // colNombre
+            // 
+            this.colNombre.HeaderText = "Nombre";
+            this.colNombre.Name = "colNombre";
+            // 
+            // colTramite
+            // 
+            this.colTramite.HeaderText = "Tramite";
+            this.colTramite.Name = "colTramite";
+            // 
             // frmArbol
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -303,5 +325,8 @@
         private System.Windows.Forms.DataGridView dgvArbol;
         private System.Windows.Forms.TreeView tvArbol;
         private System.Windows.Forms.Button btnEquilibrar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colCodigo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colNombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colTramite;
     }
 }

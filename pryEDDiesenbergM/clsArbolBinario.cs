@@ -37,6 +37,19 @@ namespace pryEDDiesenbergM
             }
         }
 
+        public void Agregar (DataGridView Grilla)
+        {
+            Grilla.Rows.Clear();
+            InOrdenAsc(Grilla, Raiz);
+        }
+
+        private void InOrdenAsc(DataGridView Dgv, clsNodo R)
+        {
+            if (R.Izquierdo != null) InOrdenAsc(Dgv, R.Izquierdo);
+            Dgv.Rows.Add(R.Codigo, R.Nombre, R.Tramite);
+            if (R.Derecho != null) InOrdenAsc(Dgv, R.Derecho);
+
+        }
         public void Recorrer (DataGridView Grilla )
         {
             Grilla.Rows.Clear();
@@ -60,12 +73,7 @@ namespace pryEDDiesenbergM
             if(R.Derecho != null) PreOrden(R.Derecho, NodoPadre);
         }
 
-        private void InOrdenAsc(DataGridView Dgv, clsNodo R)
-        {
-            if (R.Izquierdo != null) InOrdenAsc(Dgv, R.Izquierdo);
-            Dgv.Rows.Add(R.Codigo, R.Nombre, R.Tramite);
-            if (R.Derecho != null) InOrdenAsc(Dgv, R.Derecho);
-        }
+        
 
         public void InOrdenDesc(ListBox Lst, clsNodo R)
         {
