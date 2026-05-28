@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvConsultaTabla = new System.Windows.Forms.DataGridView();
+            this.dgvDatos = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.cbTabla = new System.Windows.Forms.ComboBox();
+            this.cmbTabla = new System.Windows.Forms.ComboBox();
             this.btnListar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvConsultaTabla)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgvConsultaTabla
+            // dgvDatos
             // 
-            this.dgvConsultaTabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvConsultaTabla.Location = new System.Drawing.Point(12, 12);
-            this.dgvConsultaTabla.Name = "dgvConsultaTabla";
-            this.dgvConsultaTabla.Size = new System.Drawing.Size(776, 355);
-            this.dgvConsultaTabla.TabIndex = 0;
+            this.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDatos.Location = new System.Drawing.Point(12, 12);
+            this.dgvDatos.Name = "dgvDatos";
+            this.dgvDatos.Size = new System.Drawing.Size(776, 355);
+            this.dgvDatos.TabIndex = 0;
             // 
             // label1
             // 
@@ -53,14 +53,19 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Tabla de la Base de Datos";
             // 
-            // cbTabla
+            // cmbTabla
             // 
-            this.cbTabla.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbTabla.FormattingEnabled = true;
-            this.cbTabla.Location = new System.Drawing.Point(519, 384);
-            this.cbTabla.Name = "cbTabla";
-            this.cbTabla.Size = new System.Drawing.Size(166, 24);
-            this.cbTabla.TabIndex = 2;
+            this.cmbTabla.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbTabla.FormattingEnabled = true;
+            this.cmbTabla.Items.AddRange(new object[] {
+            "Autor",
+            "Idioma",
+            "Libro",
+            "Pais"});
+            this.cmbTabla.Location = new System.Drawing.Point(519, 384);
+            this.cmbTabla.Name = "cmbTabla";
+            this.cmbTabla.Size = new System.Drawing.Size(166, 24);
+            this.cmbTabla.TabIndex = 2;
             // 
             // btnListar
             // 
@@ -71,6 +76,7 @@
             this.btnListar.TabIndex = 3;
             this.btnListar.Text = "Listar";
             this.btnListar.UseVisualStyleBackColor = true;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
             // frmConsultaTabla
             // 
@@ -78,13 +84,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnListar);
-            this.Controls.Add(this.cbTabla);
+            this.Controls.Add(this.cmbTabla);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dgvConsultaTabla);
+            this.Controls.Add(this.dgvDatos);
             this.Name = "frmConsultaTabla";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta de una Tabla";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvConsultaTabla)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -92,9 +98,9 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvConsultaTabla;
+        private System.Windows.Forms.DataGridView dgvDatos;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cbTabla;
+        private System.Windows.Forms.ComboBox cmbTabla;
         private System.Windows.Forms.Button btnListar;
     }
 }
