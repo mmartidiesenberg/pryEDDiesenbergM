@@ -21,6 +21,7 @@ namespace pryEDDiesenbergM
         {
             clsBaseDatos bd = new clsBaseDatos();   
             bd.Listar1(cmbTabla.Text, dgvDatos);
+
         }
     }
 }
