@@ -16,5 +16,12 @@ namespace pryEDDiesenbergM
         {
             InitializeComponent();
         }
+        clsBaseDatos bd = new clsBaseDatos();
+        private void btnMultiatributo_Click(object sender, EventArgs e)
+        {
+            String varSQL = "select titulo, año, cantidad, " +
+                "precio, (cantidad * precio) as Total from libro";
+            bd.Listar(dgvBD, varSQL);
+        }
     }
 }
