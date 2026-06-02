@@ -91,6 +91,7 @@
             this.Name = "frmConsultaBD";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta en la Base de Datos";
+            this.Load += new System.EventHandler(this.frmConsultaBD_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

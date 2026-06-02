@@ -22,5 +22,10 @@ namespace pryEDDiesenbergM
             clsBaseDatos objBaseDatos = new clsBaseDatos();
             objBaseDatos.Listar(dgvDatos, txtSql.Text);
         }
+
+        private void frmConsultaBD_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
