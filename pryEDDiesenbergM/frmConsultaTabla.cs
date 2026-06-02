@@ -20,7 +20,7 @@ namespace pryEDDiesenbergM
         private void btnListar_Click(object sender, EventArgs e)
         {
             clsBaseDatos bd = new clsBaseDatos();   
-            bd.Listar1(cmbTabla.Text, dgvDatos);
+            bd.Listar(cmbTabla.Text, dgvDatos);
 
         }
     }
