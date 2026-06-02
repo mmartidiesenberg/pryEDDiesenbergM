@@ -43,7 +43,7 @@ namespace pryEDDiesenbergM
             }
         }
 
-        public void Listar1(String tabla, DataGridView Grilla)
+        public void Listar(String tabla, DataGridView Grilla)
         {
             try
             {

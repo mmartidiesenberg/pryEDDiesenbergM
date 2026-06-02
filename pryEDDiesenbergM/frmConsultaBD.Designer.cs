@@ -30,11 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.txtConsulta = new System.Windows.Forms.TextBox();
+            this.txtSql = new System.Windows.Forms.TextBox();
             this.lblConsultaSQL = new System.Windows.Forms.Label();
             this.btnListar = new System.Windows.Forms.Button();
-            this.dgvConsultaBD = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvConsultaBD)).BeginInit();
+            this.dgvDatos = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -42,13 +42,13 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // txtConsulta
+            // txtSql
             // 
-            this.txtConsulta.Location = new System.Drawing.Point(12, 32);
-            this.txtConsulta.Multiline = true;
-            this.txtConsulta.Name = "txtConsulta";
-            this.txtConsulta.Size = new System.Drawing.Size(776, 175);
-            this.txtConsulta.TabIndex = 2;
+            this.txtSql.Location = new System.Drawing.Point(12, 32);
+            this.txtSql.Multiline = true;
+            this.txtSql.Name = "txtSql";
+            this.txtSql.Size = new System.Drawing.Size(776, 175);
+            this.txtSql.TabIndex = 2;
             // 
             // lblConsultaSQL
             // 
@@ -69,28 +69,29 @@
             this.btnListar.TabIndex = 4;
             this.btnListar.Text = "Listar";
             this.btnListar.UseVisualStyleBackColor = true;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
-            // dgvConsultaBD
+            // dgvDatos
             // 
-            this.dgvConsultaBD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvConsultaBD.Location = new System.Drawing.Point(12, 249);
-            this.dgvConsultaBD.Name = "dgvConsultaBD";
-            this.dgvConsultaBD.Size = new System.Drawing.Size(776, 241);
-            this.dgvConsultaBD.TabIndex = 5;
+            this.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDatos.Location = new System.Drawing.Point(12, 249);
+            this.dgvDatos.Name = "dgvDatos";
+            this.dgvDatos.Size = new System.Drawing.Size(776, 241);
+            this.dgvDatos.TabIndex = 5;
             // 
             // frmConsultaBD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 502);
-            this.Controls.Add(this.dgvConsultaBD);
+            this.Controls.Add(this.dgvDatos);
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.lblConsultaSQL);
-            this.Controls.Add(this.txtConsulta);
+            this.Controls.Add(this.txtSql);
             this.Name = "frmConsultaBD";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta en la Base de Datos";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvConsultaBD)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -99,9 +100,9 @@
         #endregion
 
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.TextBox txtConsulta;
+        private System.Windows.Forms.TextBox txtSql;
         private System.Windows.Forms.Label lblConsultaSQL;
         private System.Windows.Forms.Button btnListar;
-        private System.Windows.Forms.DataGridView dgvConsultaBD;
+        private System.Windows.Forms.DataGridView dgvDatos;
     }
 }
