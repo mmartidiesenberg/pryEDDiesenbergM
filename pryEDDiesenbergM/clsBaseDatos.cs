@@ -69,5 +69,31 @@ namespace pryEDDiesenbergM
                 conexion.Close();
             }
         }
+        public void Listar(DataGridView Grilla, String varInstruccionSQL)
+        {
+            try
+            {
+                conexion.ConnectionString = CadenaConexion1;
+                conexion.Open();
+
+                comando.Connection = conexion;
+                comando.CommandType = CommandType.Text;
+                comando.CommandText = varInstruccionSQL;
+
+                DataSet DS = new DataSet();
+                adaptador = new OleDbDataAdapter(comando);
+                adaptador.Fill(DS, "Resultado");
+
+                Grilla.DataSource = null;
+                Grilla.DataSource = DS.Tables["Resultado"];
+
+                conexion.Close();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+                conexion.Close();
+            }
+        }
     }
 }
