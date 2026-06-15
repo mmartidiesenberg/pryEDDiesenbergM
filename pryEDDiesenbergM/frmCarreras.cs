@@ -29,5 +29,12 @@ namespace pryEDDiesenbergM
         {
 
         }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            clsArchivoTexto x = new clsArchivoTexto();
+            x.NomArchi = "Carreras.txt";
+            x.Recorrer(lstCarreras);
+        }
     }
 }

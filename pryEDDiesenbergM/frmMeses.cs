@@ -30,5 +30,12 @@ namespace pryEDDiesenbergM
         {
 
         }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            clsArchivoTexto x = new clsArchivoTexto();
+            x.NomArchi = "Meses.txt";
+            x.Recorrer(lstMeses);
+        }
     }
 }

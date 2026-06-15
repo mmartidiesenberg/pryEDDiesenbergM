@@ -48,6 +48,7 @@
             // 
             // cmbOperacion
             // 
+            this.cmbOperacion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbOperacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbOperacion.FormattingEnabled = true;
             this.cmbOperacion.Location = new System.Drawing.Point(271, 19);
