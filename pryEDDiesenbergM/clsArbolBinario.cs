@@ -194,6 +194,34 @@ namespace pryEDDiesenbergM
             PostOrdenGrilla(dgv, R.Derecho);
             dgv.Rows.Add(R.Codigo, R.Nombre, R.Tramite);
         }
+        public void Equilibrar()
+        {
+            List<clsNodo> lista = new List<clsNodo>();
+            RecolectarInOrden(Raiz, lista);
+            Raiz = null;
+            InsertarEquilibrado(lista, 0, lista.Count - 1);
+        }
+
+        private void RecolectarInOrden(clsNodo R, List<clsNodo> lista)
+        {
+            if (R == null) return;
+            RecolectarInOrden(R.Izquierdo, lista);
+            clsNodo nvo = new clsNodo();
+            nvo.Codigo = R.Codigo;
+            nvo.Nombre = R.Nombre;
+            nvo.Tramite = R.Tramite;
+            lista.Add(nvo);
+            RecolectarInOrden(R.Derecho, lista);
+        }
+
+        private void InsertarEquilibrado(List<clsNodo> lista, int inicio, int fin)
+        {
+            if (inicio > fin) return;
+            int medio = (inicio + fin) / 2;
+            Agregar(lista[medio]);
+            InsertarEquilibrado(lista, inicio, medio - 1);
+            InsertarEquilibrado(lista, medio + 1, fin);
+        }
     }
 }
 //

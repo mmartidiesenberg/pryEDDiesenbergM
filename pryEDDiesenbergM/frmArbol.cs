@@ -76,5 +76,13 @@ namespace pryEDDiesenbergM
                 ObjArbol.PostOrdenGrilla(dgvArbol, ObjArbol.Raiz);
             }
         }
+
+        private void btnEquilibrar_Click(object sender, EventArgs e)
+        {
+            ObjArbol.Equilibrar();
+            ObjArbol.Recorrer(dgvArbol);
+            ObjArbol.Recorrer(tvArbol);
+            ObjArbol.Recorrer(cmbCodigo);
+        }
     }
 }
