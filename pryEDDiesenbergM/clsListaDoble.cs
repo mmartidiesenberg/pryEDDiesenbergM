@@ -93,9 +93,10 @@ namespace pryEDDiesenbergM
         {
             clsNodo aux = Primero;
             Combo.Items.Clear();
+
             while (aux != null)
             {
-                Combo.Items.Add(aux.Nombre);
+                Combo.Items.Add(aux.Codigo);
                 aux = aux.Siguiente;
             }
         }

@@ -53,17 +53,17 @@ namespace pryEDDiesenbergM
             string codigoSeleccionado = cmbCodigo.SelectedItem.ToString();
             foreach (DataGridViewRow fila in dgvLista.Rows)
             {
-                if (fila.Cells[0].Value.ToString() == codigoSeleccionado)
+                if (fila.Cells[0].Value?.ToString() == codigoSeleccionado)
                 {
                     dgvLista.Rows.RemoveAt(fila.Index);
                     break;
                 }
             }
-            foreach (var item in lstLista.Items)
+            for (int i = 0; i < lstLista.Items.Count; i++)
             {
-                if (item.ToString().Contains(codigoSeleccionado))
+                if (lstLista.Items[i].ToString().Contains(codigoSeleccionado))
                 {
-                    lstLista.Items.Remove(item);
+                    lstLista.Items.RemoveAt(i);
                     break;
                 }
             }

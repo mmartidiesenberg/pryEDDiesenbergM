@@ -28,7 +28,26 @@ namespace pryEDDiesenbergM
             ObjArbol.Agregar(Persona);
             ObjArbol.Recorrer(dgvArbol);
             ObjArbol.Recorrer(tvArbol);
+            ObjArbol.Recorrer(cmbCodigo);
 
+        }
+
+        private void frmArbol_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (cmbCodigo.SelectedIndex == -1) return;
+
+            int codigo = Convert.ToInt32(cmbCodigo.SelectedItem);
+
+            ObjArbol.Eliminar(codigo);
+
+            ObjArbol.Recorrer(dgvArbol);
+            ObjArbol.Recorrer(tvArbol);
+            ObjArbol.Recorrer(cmbCodigo);
         }
     }
 }

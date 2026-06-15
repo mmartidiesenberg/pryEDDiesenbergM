@@ -64,6 +64,21 @@ namespace pryEDDiesenbergM
             PreOrden(Raiz, NodoPadre);
             tree.ExpandAll();
         }
+        public void Recorrer(ComboBox cmb)
+        {
+            cmb.Items.Clear();
+            CargarCombo(Raiz, cmb);
+        }
+
+        private void CargarCombo(clsNodo R, ComboBox cmb)
+        {
+            if (R != null)
+            {
+                CargarCombo(R.Izquierdo, cmb);
+                cmb.Items.Add(R.Codigo);
+                CargarCombo(R.Derecho, cmb);
+            }
+        }
 
         private void PreOrden(clsNodo R, TreeNode nodoTreeView)
         {
@@ -74,7 +89,7 @@ namespace pryEDDiesenbergM
         }
 
         
-
+        
         public void InOrdenDesc(ListBox Lst, clsNodo R)
         {
             if (R.Derecho != null)
@@ -86,6 +101,52 @@ namespace pryEDDiesenbergM
             {
                 InOrdenDesc(Lst, R.Izquierdo);
             }
+        }
+        public void Eliminar(int codigo)
+        {
+            Raiz = EliminarNodo(Raiz, codigo);
+        }
+
+        private clsNodo EliminarNodo(clsNodo nodo, int codigo)
+        {
+            if (nodo == null)
+                return null;
+
+            if (codigo < nodo.Codigo)
+            {
+                nodo.Izquierdo = EliminarNodo(nodo.Izquierdo, codigo);
+            }
+            else if (codigo > nodo.Codigo)
+            {
+                nodo.Derecho = EliminarNodo(nodo.Derecho, codigo);
+            }
+            else
+            {
+                // Sin hijos
+                if (nodo.Izquierdo == null && nodo.Derecho == null)
+                    return null;
+
+                // Un hijo
+                if (nodo.Izquierdo == null)
+                    return nodo.Derecho;
+
+                if (nodo.Derecho == null)
+                    return nodo.Izquierdo;
+
+                // Dos hijos
+                clsNodo sucesor = nodo.Derecho;
+
+                while (sucesor.Izquierdo != null)
+                    sucesor = sucesor.Izquierdo;
+
+                nodo.Codigo = sucesor.Codigo;
+                nodo.Nombre = sucesor.Nombre;
+                nodo.Tramite = sucesor.Tramite;
+
+                nodo.Derecho = EliminarNodo(nodo.Derecho, sucesor.Codigo);
+            }
+
+            return nodo;
         }
     }
 }
