@@ -123,6 +123,7 @@
             this.cmbOrigenA.Name = "cmbOrigenA";
             this.cmbOrigenA.Size = new System.Drawing.Size(159, 24);
             this.cmbOrigenA.TabIndex = 9;
+            this.cmbOrigenA.SelectedIndexChanged += new System.EventHandler(this.cmbOrigenA_SelectedIndexChanged);
             // 
             // lblOrigen
             // 

@@ -21,10 +21,10 @@ namespace pryEDDiesenbergM
         private void frmGrafo_Load(object sender, EventArgs e)
         {
             grafo.MostrarCiudades(cmbOrigenA);
-            grafo.MostrarCiudades(cmbOrigenE);
-            grafo.MostrarCiudades(cmbOrigenC);
             grafo.MostrarCiudades(cmbDestinoA);
+            grafo.MostrarCiudades(cmbOrigenE);
             grafo.MostrarCiudades(cmbDestinoE);
+            grafo.MostrarCiudades(cmbOrigenC);
             grafo.MostrarCiudades(cmbDestinoC);
             grafo.MostrarTodo(dgvGrafo);
         }
@@ -48,8 +48,8 @@ namespace pryEDDiesenbergM
 
         private void btnConsultar_Click(object sender, EventArgs e)
         {
-            Int32 f = cmbOrigenC.SelectedIndex;
-            Int32 c = cmbDestinoC.SelectedIndex;
+            Int32 f = cmbOrigenE.SelectedIndex;
+            Int32 c = cmbDestinoE.SelectedIndex;
             Decimal precio = grafo.Consultar(f, c);
             lblPrecio2.Text = precio.ToString();
         }
@@ -64,19 +64,24 @@ namespace pryEDDiesenbergM
 
         private void btnListarDestinos_Click(object sender, EventArgs e)
         {
-            Int32 f = cmbOrigenA.SelectedIndex;
-            grafo.MostrarDestinos(f, dgvGrafo);
+            Int32 c = cmbOrigenC.SelectedIndex;
+            grafo.MostrarDestinos(c, dgvGrafo);
         }
 
         private void btnListarOrigenes_Click(object sender, EventArgs e)
         {
-            Int32 c = cmbDestinoA.SelectedIndex;
+            Int32 c = cmbDestinoC.SelectedIndex;
             grafo.MostrarOrigenes(c, dgvGrafo);
         }
 
         private void btnVerViajes_Click(object sender, EventArgs e)
         {
             grafo.MostrarTodo(dgvGrafo);
+        }
+
+        private void cmbOrigenA_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
