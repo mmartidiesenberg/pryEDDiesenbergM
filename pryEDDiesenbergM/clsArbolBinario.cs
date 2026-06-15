@@ -45,10 +45,11 @@ namespace pryEDDiesenbergM
 
         private void InOrdenAsc(DataGridView Dgv, clsNodo R)
         {
-            if (R.Izquierdo != null) InOrdenAsc(Dgv, R.Izquierdo);
-            Dgv.Rows.Add(R.Codigo, R.Nombre, R.Tramite);
-            if (R.Derecho != null) InOrdenAsc(Dgv, R.Derecho);
+            if (R == null) return;
 
+            InOrdenAsc(Dgv, R.Izquierdo);
+            Dgv.Rows.Add(R.Codigo, R.Nombre, R.Tramite);
+            InOrdenAsc(Dgv, R.Derecho);
         }
         public void Recorrer (DataGridView Grilla )
         {
@@ -80,16 +81,18 @@ namespace pryEDDiesenbergM
             }
         }
 
+
         private void PreOrden(clsNodo R, TreeNode nodoTreeView)
         {
+            if (R == null) return;
+
             TreeNode NodoPadre = new TreeNode(R.Codigo.ToString());
             nodoTreeView.Nodes.Add(NodoPadre);
-            if (R.Izquierdo != null) PreOrden(R.Izquierdo, NodoPadre);
-            if(R.Derecho != null) PreOrden(R.Derecho, NodoPadre);
+
+            PreOrden(R.Izquierdo, NodoPadre);
+            PreOrden(R.Derecho, NodoPadre);
         }
 
-        
-        
         public void InOrdenDesc(ListBox Lst, clsNodo R)
         {
             if (R.Derecho != null)
@@ -147,6 +150,49 @@ namespace pryEDDiesenbergM
             }
 
             return nodo;
+        }
+        public void InOrden(ListBox lst, clsNodo R)
+        {
+            if (R == null) return;
+
+            InOrden(lst, R.Izquierdo);
+            lst.Items.Add(R.Codigo);
+            InOrden(lst, R.Derecho);
+        }
+
+        public void PreOrden(ListBox lst, clsNodo R)
+        {
+            if (R == null) return;
+
+            lst.Items.Add(R.Codigo);
+            PreOrden(lst, R.Izquierdo);
+            PreOrden(lst, R.Derecho);
+        }
+
+        public void PostOrden(ListBox lst, clsNodo R)
+        {
+            if (R == null) return;
+
+            PostOrden(lst, R.Izquierdo);
+            PostOrden(lst, R.Derecho);
+            lst.Items.Add(R.Codigo);
+        }
+        public void PreOrdenGrilla(DataGridView dgv, clsNodo R)
+        {
+            if (R == null) return;
+
+            dgv.Rows.Add(R.Codigo, R.Nombre, R.Tramite);
+            PreOrdenGrilla(dgv, R.Izquierdo);
+            PreOrdenGrilla(dgv, R.Derecho);
+        }
+
+        public void PostOrdenGrilla(DataGridView dgv, clsNodo R)
+        {
+            if (R == null) return;
+
+            PostOrdenGrilla(dgv, R.Izquierdo);
+            PostOrdenGrilla(dgv, R.Derecho);
+            dgv.Rows.Add(R.Codigo, R.Nombre, R.Tramite);
         }
     }
 }

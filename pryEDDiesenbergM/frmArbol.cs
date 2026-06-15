@@ -49,5 +49,32 @@ namespace pryEDDiesenbergM
             ObjArbol.Recorrer(tvArbol);
             ObjArbol.Recorrer(cmbCodigo);
         }
+
+        private void rbInOrden_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbInOrden.Checked)
+            {
+                dgvArbol.Rows.Clear();
+                ObjArbol.Recorrer(dgvArbol);
+            }
+        }
+
+        private void rbPreOrden_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbPreOrden.Checked)
+            {
+                dgvArbol.Rows.Clear();
+                ObjArbol.PreOrdenGrilla(dgvArbol, ObjArbol.Raiz);
+            }
+        }
+
+        private void rbPostOrden_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbPostOrden.Checked)
+            {
+                dgvArbol.Rows.Clear();
+                ObjArbol.PostOrdenGrilla(dgvArbol, ObjArbol.Raiz);
+            }
+        }
     }
 }

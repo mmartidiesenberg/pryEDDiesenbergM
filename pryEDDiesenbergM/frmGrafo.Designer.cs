@@ -52,10 +52,10 @@
             this.btnListarOrigenes = new System.Windows.Forms.Button();
             this.btnListarDestinos = new System.Windows.Forms.Button();
             this.cmbDestinoC = new System.Windows.Forms.ComboBox();
+            this.cmbOrigenC = new System.Windows.Forms.ComboBox();
             this.lblHasta = new System.Windows.Forms.Label();
             this.lblDesde = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.cmbOrigenC = new System.Windows.Forms.ComboBox();
             this.gbCargaDatos.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.gbListarViajes.SuspendLayout();
@@ -104,6 +104,7 @@
             this.btnBorrarTodo.TabIndex = 12;
             this.btnBorrarTodo.Text = "Borrar Todo";
             this.btnBorrarTodo.UseVisualStyleBackColor = true;
+            this.btnBorrarTodo.Click += new System.EventHandler(this.btnBorrarTodo_Click);
             // 
             // btnCargar
             // 
@@ -176,6 +177,7 @@
             this.btnConsultar.TabIndex = 14;
             this.btnConsultar.Text = "Consultar";
             this.btnConsultar.UseVisualStyleBackColor = true;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
             // btnBorrar
             // 
@@ -185,6 +187,7 @@
             this.btnBorrar.TabIndex = 15;
             this.btnBorrar.Text = "Borrar";
             this.btnBorrar.UseVisualStyleBackColor = true;
+            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
             // 
             // lblPrecio2
             // 
@@ -271,6 +274,7 @@
             this.btnVerViajes.TabIndex = 6;
             this.btnVerViajes.Text = "Ver todos los Viajes";
             this.btnVerViajes.UseVisualStyleBackColor = true;
+            this.btnVerViajes.Click += new System.EventHandler(this.btnVerViajes_Click);
             // 
             // btnListarOrigenes
             // 
@@ -280,6 +284,7 @@
             this.btnListarOrigenes.TabIndex = 5;
             this.btnListarOrigenes.Text = "Listar Orígenes";
             this.btnListarOrigenes.UseVisualStyleBackColor = true;
+            this.btnListarOrigenes.Click += new System.EventHandler(this.btnListarOrigenes_Click);
             // 
             // btnListarDestinos
             // 
@@ -289,6 +294,7 @@
             this.btnListarDestinos.TabIndex = 4;
             this.btnListarDestinos.Text = "Listar Destinos";
             this.btnListarDestinos.UseVisualStyleBackColor = true;
+            this.btnListarDestinos.Click += new System.EventHandler(this.btnListarDestinos_Click);
             // 
             // cmbDestinoC
             // 
@@ -297,6 +303,14 @@
             this.cmbDestinoC.Name = "cmbDestinoC";
             this.cmbDestinoC.Size = new System.Drawing.Size(121, 24);
             this.cmbDestinoC.TabIndex = 3;
+            // 
+            // cmbOrigenC
+            // 
+            this.cmbOrigenC.FormattingEnabled = true;
+            this.cmbOrigenC.Location = new System.Drawing.Point(59, 18);
+            this.cmbOrigenC.Name = "cmbOrigenC";
+            this.cmbOrigenC.Size = new System.Drawing.Size(121, 24);
+            this.cmbOrigenC.TabIndex = 2;
             // 
             // lblHasta
             // 
@@ -325,14 +339,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // cmbOrigenC
-            // 
-            this.cmbOrigenC.FormattingEnabled = true;
-            this.cmbOrigenC.Location = new System.Drawing.Point(59, 18);
-            this.cmbOrigenC.Name = "cmbOrigenC";
-            this.cmbOrigenC.Size = new System.Drawing.Size(121, 24);
-            this.cmbOrigenC.TabIndex = 2;
             // 
             // frmGrafo
             // 
