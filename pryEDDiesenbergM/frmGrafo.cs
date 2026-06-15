@@ -31,13 +31,30 @@ namespace pryEDDiesenbergM
 
         private void btnCargar_Click(object sender, EventArgs e)
         {
+            if (cmbOrigenA.SelectedIndex < 0 || cmbDestinoA.SelectedIndex < 0)
+            {
+                MessageBox.Show("Seleccione origen y destino.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtPrecio.Text))
+            {
+                MessageBox.Show("Ingrese un precio válido.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (!Decimal.TryParse(txtPrecio.Text, out Decimal p))
+            {
+                MessageBox.Show("Precio inválido. Use formato numérico (coma decimal en es-ES).", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             Int32 f = cmbOrigenA.SelectedIndex;
             Int32 c = cmbDestinoA.SelectedIndex;
-            Decimal p = Convert.ToDecimal(txtPrecio.Text);
+
             grafo.Agregar(f, c, p);
             grafo.MostrarTodo(dgvGrafo);
-            //lblTitulo.Text = "Listado Completo de viajes";
-            txtPrecio.Text = "";    
+            txtPrecio.Text = "";
         }
 
         private void btnBorrarTodo_Click(object sender, EventArgs e)
@@ -48,6 +65,12 @@ namespace pryEDDiesenbergM
 
         private void btnConsultar_Click(object sender, EventArgs e)
         {
+            if (cmbOrigenE.SelectedIndex < 0 || cmbDestinoE.SelectedIndex < 0)
+            {
+                MessageBox.Show("Seleccione origen y destino para consultar.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             Int32 f = cmbOrigenE.SelectedIndex;
             Int32 c = cmbDestinoE.SelectedIndex;
             Decimal precio = grafo.Consultar(f, c);
