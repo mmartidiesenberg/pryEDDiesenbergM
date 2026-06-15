@@ -94,6 +94,7 @@
             this.Controls.Add(this.lblOperacion);
             this.Name = "frmConsultasVarias";
             this.Text = "Consultas Varias";
+            this.Load += new System.EventHandler(this.frmConsultasVarias_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvOperaciones)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
