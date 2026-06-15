@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.lblOperacion = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbOperacion = new System.Windows.Forms.ComboBox();
             this.btnListar = new System.Windows.Forms.Button();
             this.dgvOperaciones = new System.Windows.Forms.DataGridView();
             this.lblLabel = new System.Windows.Forms.Label();
@@ -46,14 +46,14 @@
             this.lblOperacion.TabIndex = 0;
             this.lblOperacion.Text = "Operación a realizar en la base de datos:";
             // 
-            // comboBox1
+            // cmbOperacion
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(271, 19);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(389, 24);
-            this.comboBox1.TabIndex = 1;
+            this.cmbOperacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbOperacion.FormattingEnabled = true;
+            this.cmbOperacion.Location = new System.Drawing.Point(271, 19);
+            this.cmbOperacion.Name = "cmbOperacion";
+            this.cmbOperacion.Size = new System.Drawing.Size(389, 24);
+            this.cmbOperacion.TabIndex = 1;
             // 
             // btnListar
             // 
@@ -64,6 +64,7 @@
             this.btnListar.TabIndex = 2;
             this.btnListar.Text = "Listar";
             this.btnListar.UseVisualStyleBackColor = true;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
             // dgvOperaciones
             // 
@@ -89,7 +90,7 @@
             this.Controls.Add(this.lblLabel);
             this.Controls.Add(this.dgvOperaciones);
             this.Controls.Add(this.btnListar);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbOperacion);
             this.Controls.Add(this.lblOperacion);
             this.Name = "frmConsultasVarias";
             this.Text = "Consultas Varias";
@@ -102,7 +103,7 @@
         #endregion
 
         private System.Windows.Forms.Label lblOperacion;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbOperacion;
         private System.Windows.Forms.Button btnListar;
         private System.Windows.Forms.DataGridView dgvOperaciones;
         private System.Windows.Forms.Label lblLabel;

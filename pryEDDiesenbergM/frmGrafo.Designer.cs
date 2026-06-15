@@ -90,6 +90,7 @@
             // 
             // cmbDestinoA
             // 
+            this.cmbDestinoA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDestinoA.FormattingEnabled = true;
             this.cmbDestinoA.Location = new System.Drawing.Point(68, 70);
             this.cmbDestinoA.Name = "cmbDestinoA";
@@ -118,6 +119,7 @@
             // 
             // cmbOrigenA
             // 
+            this.cmbOrigenA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbOrigenA.FormattingEnabled = true;
             this.cmbOrigenA.Location = new System.Drawing.Point(68, 29);
             this.cmbOrigenA.Name = "cmbOrigenA";
@@ -200,6 +202,7 @@
             // 
             // cmbDestinoE
             // 
+            this.cmbDestinoE.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDestinoE.FormattingEnabled = true;
             this.cmbDestinoE.Location = new System.Drawing.Point(68, 70);
             this.cmbDestinoE.Name = "cmbDestinoE";
@@ -208,6 +211,7 @@
             // 
             // cmbOrigenE
             // 
+            this.cmbOrigenE.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbOrigenE.FormattingEnabled = true;
             this.cmbOrigenE.Location = new System.Drawing.Point(68, 29);
             this.cmbOrigenE.Name = "cmbOrigenE";
@@ -299,6 +303,7 @@
             // 
             // cmbDestinoC
             // 
+            this.cmbDestinoC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDestinoC.FormattingEnabled = true;
             this.cmbDestinoC.Location = new System.Drawing.Point(360, 18);
             this.cmbDestinoC.Name = "cmbDestinoC";
@@ -307,6 +312,7 @@
             // 
             // cmbOrigenC
             // 
+            this.cmbOrigenC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbOrigenC.FormattingEnabled = true;
             this.cmbOrigenC.Location = new System.Drawing.Point(59, 18);
             this.cmbOrigenC.Name = "cmbOrigenC";
